@@ -1,0 +1,29 @@
+{
+  "product": { "name": "The Forge — Custom Mechanical Keyboard", "basePrice": 149 },
+  "options": {
+    "layout": [
+      { "id": "60", "label": "60% (Compact)", "priceDelta": 0 },
+      { "id": "tkl", "label": "Tenkeyless", "priceDelta": 20 },
+      { "id": "full", "label": "Full-size", "priceDelta": 40 }
+    ],
+    "caseColor": [
+      { "id": "charcoal", "label": "Charcoal Aluminum", "priceDelta": 0, "hex": "#3a3a3c" },
+      { "id": "arctic", "label": "Arctic White", "priceDelta": 0, "hex": "#f2f2f2" },
+      { "id": "coral", "label": "Sunset Coral", "priceDelta": 15, "hex": "#ff6b5c" }
+    ],
+    "switchType": [
+      { "id": "linear", "label": "Linear — quiet, smooth", "priceDelta": 0, "noiseLevel": "low" },
+      { "id": "tactile", "label": "Tactile — bump feedback", "priceDelta": 10, "noiseLevel": "medium" },
+      { "id": "clicky", "label": "Clicky — audible click", "priceDelta": 10, "noiseLevel": "high" }
+    ],
+    "keycapSet": [
+      { "id": "standard", "label": "Standard PBT", "priceDelta": 0 },
+      { "id": "sculpted", "label": "Sculpted Profile", "priceDelta": 25 }
+    ],
+    "addOns": [
+      { "id": "wristrest", "label": "Wrist Rest", "price": 25 },
+      { "id": "case", "label": "Carrying Case", "price": 30 },
+      { "id": "cable", "label": "Custom Coiled Cable", "price": 20 }
+    ]
+  }
+}
