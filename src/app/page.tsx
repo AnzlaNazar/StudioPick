@@ -1,12 +1,13 @@
 "use client";
 
-// Client state is required for persisted configurator selections and live pricing.
-import { useConfiguratorStore } from "../store/configuratorStore";
+import { useConfiguratorStore } from "@/store/configuratorStore";
+import { StyleAdvisor } from "@/components/advisor/StyleAdvisor";
 import { useEffect, useState } from "react";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
-  const { layout, caseColor, switchType, computedPrice } = useConfiguratorStore();
+  const { layout, caseColor, switchType, computedPrice, setAdvisorOpen } =
+    useConfiguratorStore();
 
   useEffect(() => {
     setMounted(true);
@@ -43,11 +44,19 @@ export default function Home() {
         </section>
 
         {/* Placeholder 3: Style Advisor Trigger */}
-        <section className="border-2 border-dashed border-neutral-300 rounded-lg p-6 bg-white">
-          <h2 className="text-xl font-bold mb-1">Style Advisor Trigger</h2>
-          <p className="text-sm text-neutral-500">
-            Entry point button to open the streaming AI chat drawer.
-          </p>
+        <section className="border-2 border-dashed border-neutral-300 rounded-lg p-6 bg-white flex items-center justify-between">
+          <div>
+            <h2 className="text-xl font-bold mb-1">Style Advisor Trigger</h2>
+            <p className="text-sm text-neutral-500">
+              Need advice? Let the AI recommend a configuration based on your desk setup.
+            </p>
+          </div>
+          <button
+            onClick={() => setAdvisorOpen(true)}
+            className="px-4 py-2 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-800"
+          >
+            Open Style Advisor
+          </button>
         </section>
       </main>
 
@@ -68,6 +77,9 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      {/* Style Advisor Chat Drawer */}
+      <StyleAdvisor />
     </div>
   );
 }
