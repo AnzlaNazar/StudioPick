@@ -5,7 +5,7 @@ import { DefaultChatTransport } from "ai";
 import { useChat } from "@ai-sdk/react";
 import { useEffect, useRef, useState } from "react";
 import { useConfiguratorStore } from "@/store/configuratorStore";
-import { X, Send, Square, ArrowDown, Bot, User } from "lucide-react";
+import { X, Send, Square, ArrowDown, Bot, User, RefreshCw } from "lucide-react";
 
 type AdvisorToolPart = {
   type: "tool-configureProduct";
@@ -21,12 +21,14 @@ type BuildCardInvocation = {
   toolName: "configureProduct";
   args?: Record<string, unknown>;
   result?: {
-    layout: string;
-    caseColor: string;
-    switchType: string;
-    keycapSet: string;
-    addOns: string[];
-    totalPrice: number;
+    insufficientBudget?: boolean;
+    minRequired?: number;
+    layout?: string;
+    caseColor?: string;
+    switchType?: string;
+    keycapSet?: string;
+    addOns?: string[];
+    totalPrice?: number;
     reasoning: Array<{ choice: string; why: string }>;
   };
 };
@@ -36,13 +38,18 @@ export function StyleAdvisor() {
   const setIsOpen = useConfiguratorStore((s) => s.setAdvisorOpen);
   const [input, setInput] = useState("");
 
-  const { messages, sendMessage, status, stop } = useChat({
+  const { messages, sendMessage, status, stop, error, regenerate } = useChat({
     transport: new DefaultChatTransport({
       api: "/api/advisor",
     }),
   });
 
   const isLoading = status === "streaming" || status === "submitted";
+  const starterPrompts = [
+    "Quiet office build under $190",
+    "Compact tactile setup",
+    "Under $160 minimal",
+  ];
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isAtBottom, setIsAtBottom] = useState(true);
 
@@ -51,6 +58,10 @@ export function StyleAdvisor() {
     if (!input.trim()) return;
     sendMessage({ text: input });
     setInput("");
+  };
+
+  const handleStarterPrompt = (prompt: string) => {
+    sendMessage({ text: prompt });
   };
 
   // Handle user scroll detection
@@ -94,7 +105,7 @@ export function StyleAdvisor() {
         role="dialog"
         aria-modal="true"
         aria-label="Style Advisor Chat"
-        className="w-full max-w-md bg-white h-full flex flex-col shadow-2xl animate-in slide-in-from-right duration-200"
+        className="flex h-[100dvh] w-full min-h-0 max-w-md flex-col bg-white shadow-2xl animate-in slide-in-from-right duration-200"
       >
         {/* Header */}
         <div className="p-4 border-b flex items-center justify-between bg-neutral-50">
@@ -122,12 +133,24 @@ export function StyleAdvisor() {
           className="flex-1 overflow-y-auto p-4 space-y-4"
         >
           {messages.length === 0 && (
-            <div className="text-center py-12 text-neutral-500 space-y-2">
+            <div className="space-y-4 py-12 text-center text-neutral-500">
               <Bot className="h-8 w-8 mx-auto text-neutral-400" />
               <p className="text-sm font-medium text-neutral-700">How can I help you build today?</p>
               <p className="text-xs max-w-xs mx-auto">
                 Tell me your typing use-case, desk environment (quiet office, gaming), budget, or tactile preferences.
               </p>
+              <div className="flex flex-wrap justify-center gap-2 pt-2">
+                {starterPrompts.map((prompt) => (
+                  <button
+                    key={prompt}
+                    type="button"
+                    onClick={() => handleStarterPrompt(prompt)}
+                    className="rounded-full border border-neutral-200 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-colors hover:border-neutral-400 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+                  >
+                    {prompt}
+                  </button>
+                ))}
+              </div>
             </div>
           )}
 
@@ -206,6 +229,23 @@ export function StyleAdvisor() {
               <span className="text-xs animate-pulse">Analyzing build constraints...</span>
             </div>
           )}
+
+          {error && (
+            <div className="flex items-center justify-between gap-3 rounded-xl border border-rose-200 bg-rose-50 p-3 text-xs text-rose-950">
+              <div>
+                <p className="font-semibold">The advisor could not finish that response.</p>
+                <p className="mt-1 text-rose-800">Your conversation is still here. Please try again.</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => regenerate()}
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-rose-900 shadow-sm ring-1 ring-inset ring-rose-200 hover:bg-rose-100"
+              >
+                <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
+                Retry
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Jump to latest button */}
@@ -226,7 +266,7 @@ export function StyleAdvisor() {
             e.preventDefault();
             handleSubmit(e);
           }}
-          className="p-4 border-t bg-white space-y-2"
+          className="shrink-0 space-y-2 border-t bg-white p-4 pb-[calc(1rem+env(safe-area-inset-bottom))]"
         >
           <div className="flex gap-2">
             <textarea

@@ -19,6 +19,13 @@ export const maxDuration = 30;
 
 export async function POST(req: Request) {
   try {
+    if (!process.env.GROQ_API_KEY) {
+      return Response.json(
+        { error: "The advisor is not configured. Add GROQ_API_KEY to the deployment environment." },
+        { status: 503 },
+      );
+    }
+
     const { messages }: { messages: UIMessage[] } = await req.json();
 
     const systemPrompt = `You are the Style Advisor for The Forge, a custom mechanical keyboard configurator.
@@ -35,7 +42,7 @@ Product Data:
 ${JSON.stringify(productData, null, 2)}`;
 
     const result = streamText({
-      model: groq("openai/gpt-oss-120b"),
+      model: groq("openai/gpt-oss-20b"),
       messages: await convertToModelMessages(messages),
       system: systemPrompt,
       tools: {
@@ -48,6 +55,19 @@ ${JSON.stringify(productData, null, 2)}`;
             preferences: z.array(z.string()).describe("Prioritized attributes"),
           }),
           execute: async ({ budget, preferences }) => {
+            if (budget < productData.product.basePrice) {
+              return {
+                insufficientBudget: true,
+                minRequired: productData.product.basePrice,
+                reasoning: [
+                  {
+                    choice: "Starting budget",
+                    why: `The Forge starts at $${productData.product.basePrice} before optional upgrades. Increase your target budget to receive a complete build recommendation.`,
+                  },
+                ],
+              };
+            }
+
             const isQuiet = preferences.some((p) =>
               p.toLowerCase().includes("quiet") || p.toLowerCase().includes("office")
             );
@@ -105,9 +125,16 @@ ${JSON.stringify(productData, null, 2)}`;
     });
 
     return createUIMessageStreamResponse({
-      stream: toUIMessageStream({ stream: result.stream }),
+      stream: toUIMessageStream({
+        stream: result.stream,
+        onError: (error) => {
+          console.error("Advisor stream error:", error);
+          return "The advisor could not complete the request. Please try again.";
+        },
+      }),
     });
   } catch (error) {
+    console.error("Advisor request error:", error);
     return new Response(
       JSON.stringify({ error: "Failed to process advisor request", details: String(error) }),
       { status: 500, headers: { "Content-Type": "application/json" } }
