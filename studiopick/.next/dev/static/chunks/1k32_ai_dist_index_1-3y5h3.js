@@ -1,5 +1,5 @@
 (globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
-"[project]/node_modules/ai/dist/index.js [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
+"[project]/node_modules/@ai-sdk/react/node_modules/ai/dist/index.js [app-client] (ecmascript) <locals>", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
@@ -219,8 +219,6 @@ __turbopack_context__.s([
     ()=>isStepCount,
     "isTextUIPart",
     ()=>isTextUIPart,
-    "isToolOutputErrorUIPart",
-    ()=>isToolOutputErrorUIPart,
     "isToolUIPart",
     ()=>isToolUIPart,
     "lastAssistantMessageIsCompleteWithApprovalResponses",
@@ -292,10 +290,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 // src/index.ts
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@ai-sdk/gateway/dist/index.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/ai/node_modules/@ai-sdk/provider-utils/dist/index.js [app-client] (ecmascript) <locals>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@ai-sdk/react/node_modules/@ai-sdk/gateway/dist/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/@ai-sdk/provider-utils/dist/index.js [app-client] (ecmascript) <locals>");
 // src/generate-text/generate-text.ts
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/ai/node_modules/@ai-sdk/provider/dist/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/@ai-sdk/provider/dist/index.js [app-client] (ecmascript)");
 // src/util/zod.ts
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$zod$2f$v4$2f$classic$2f$schemas$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/zod/v4/classic/schemas.js [app-client] (ecmascript)");
 var __defProp = Object.defineProperty;
@@ -315,7 +313,7 @@ var name = "AI_InvalidArgumentError";
 var marker = `vercel.ai.error.${name}`;
 var symbol = Symbol.for(marker);
 var _a, _b;
-var InvalidArgumentError = class extends (_b = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a = symbol, _b) {
+var InvalidArgumentError = class extends (_b = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a = symbol, _b) {
     constructor({ parameter, value, message }){
         super({
             name,
@@ -326,7 +324,7 @@ var InvalidArgumentError = class extends (_b = __TURBOPACK__imported__module__$5
         this.value = value;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker);
     }
 };
 ;
@@ -334,7 +332,7 @@ var name2 = "AI_InvalidStreamPartError";
 var marker2 = `vercel.ai.error.${name2}`;
 var symbol2 = Symbol.for(marker2);
 var _a2, _b2;
-var InvalidStreamPartError = class extends (_b2 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a2 = symbol2, _b2) {
+var InvalidStreamPartError = class extends (_b2 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a2 = symbol2, _b2) {
     constructor({ chunk, message }){
         super({
             name: name2,
@@ -344,7 +342,7 @@ var InvalidStreamPartError = class extends (_b2 = __TURBOPACK__imported__module_
         this.chunk = chunk;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker2);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker2);
     }
 };
 ;
@@ -352,7 +350,7 @@ var name3 = "AI_InvalidToolApprovalError";
 var marker3 = `vercel.ai.error.${name3}`;
 var symbol3 = Symbol.for(marker3);
 var _a3, _b3;
-var InvalidToolApprovalError = class extends (_b3 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a3 = symbol3, _b3) {
+var InvalidToolApprovalError = class extends (_b3 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a3 = symbol3, _b3) {
     constructor({ approvalId }){
         super({
             name: name3,
@@ -362,7 +360,7 @@ var InvalidToolApprovalError = class extends (_b3 = __TURBOPACK__imported__modul
         this.approvalId = approvalId;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker3);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker3);
     }
 };
 ;
@@ -370,7 +368,7 @@ var name4 = "AI_InvalidToolApprovalSignatureError";
 var marker4 = `vercel.ai.error.${name4}`;
 var symbol4 = Symbol.for(marker4);
 var _a4, _b4;
-var InvalidToolApprovalSignatureError = class extends (_b4 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a4 = symbol4, _b4) {
+var InvalidToolApprovalSignatureError = class extends (_b4 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a4 = symbol4, _b4) {
     constructor({ approvalId, toolCallId, reason }){
         super({
             name: name4,
@@ -381,7 +379,7 @@ var InvalidToolApprovalSignatureError = class extends (_b4 = __TURBOPACK__import
         this.toolCallId = toolCallId;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker4);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker4);
     }
 };
 ;
@@ -389,8 +387,8 @@ var name5 = "AI_InvalidToolInputError";
 var marker5 = `vercel.ai.error.${name5}`;
 var symbol5 = Symbol.for(marker5);
 var _a5, _b5;
-var InvalidToolInputError = class extends (_b5 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a5 = symbol5, _b5) {
-    constructor({ toolInput, toolName, cause, message = `Invalid input for tool ${toolName}: ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(cause)}` }){
+var InvalidToolInputError = class extends (_b5 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a5 = symbol5, _b5) {
+    constructor({ toolInput, toolName, cause, message = `Invalid input for tool ${toolName}: ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(cause)}` }){
         super({
             name: name5,
             message,
@@ -401,7 +399,7 @@ var InvalidToolInputError = class extends (_b5 = __TURBOPACK__imported__module__
         this.toolName = toolName;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker5);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker5);
     }
 };
 ;
@@ -409,7 +407,7 @@ var name6 = "AI_ToolCallNotFoundForApprovalError";
 var marker6 = `vercel.ai.error.${name6}`;
 var symbol6 = Symbol.for(marker6);
 var _a6, _b6;
-var ToolCallNotFoundForApprovalError = class extends (_b6 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a6 = symbol6, _b6) {
+var ToolCallNotFoundForApprovalError = class extends (_b6 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a6 = symbol6, _b6) {
     constructor({ toolCallId, approvalId }){
         super({
             name: name6,
@@ -420,7 +418,7 @@ var ToolCallNotFoundForApprovalError = class extends (_b6 = __TURBOPACK__importe
         this.approvalId = approvalId;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker6);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker6);
     }
 };
 ;
@@ -428,7 +426,7 @@ var name7 = "AI_MissingToolResultsError";
 var marker7 = `vercel.ai.error.${name7}`;
 var symbol7 = Symbol.for(marker7);
 var _a7, _b7;
-var MissingToolResultsError = class extends (_b7 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a7 = symbol7, _b7) {
+var MissingToolResultsError = class extends (_b7 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a7 = symbol7, _b7) {
     constructor({ toolCallIds }){
         super({
             name: name7,
@@ -438,7 +436,7 @@ var MissingToolResultsError = class extends (_b7 = __TURBOPACK__imported__module
         this.toolCallIds = toolCallIds;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker7);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker7);
     }
 };
 ;
@@ -446,7 +444,7 @@ var name8 = "AI_NoImageGeneratedError";
 var marker8 = `vercel.ai.error.${name8}`;
 var symbol8 = Symbol.for(marker8);
 var _a8, _b8;
-var NoImageGeneratedError = class extends (_b8 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a8 = symbol8, _b8) {
+var NoImageGeneratedError = class extends (_b8 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a8 = symbol8, _b8) {
     constructor({ message = "No image generated.", cause, calls, responses }){
         super({
             name: name8,
@@ -458,7 +456,7 @@ var NoImageGeneratedError = class extends (_b8 = __TURBOPACK__imported__module__
         this.responses = responses;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker8);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker8);
     }
 };
 ;
@@ -466,7 +464,7 @@ var name9 = "AI_NoObjectGeneratedError";
 var marker9 = `vercel.ai.error.${name9}`;
 var symbol9 = Symbol.for(marker9);
 var _a9, _b9;
-var NoObjectGeneratedError = class extends (_b9 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a9 = symbol9, _b9) {
+var NoObjectGeneratedError = class extends (_b9 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a9 = symbol9, _b9) {
     constructor({ message = "No object generated.", cause, text: text2, response, usage, finishReason }){
         super({
             name: name9,
@@ -480,7 +478,7 @@ var NoObjectGeneratedError = class extends (_b9 = __TURBOPACK__imported__module_
         this.finishReason = finishReason;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker9);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker9);
     }
 };
 ;
@@ -488,7 +486,7 @@ var name10 = "AI_NoOutputGeneratedError";
 var marker10 = `vercel.ai.error.${name10}`;
 var symbol10 = Symbol.for(marker10);
 var _a10, _b10;
-var NoOutputGeneratedError = class extends (_b10 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a10 = symbol10, _b10) {
+var NoOutputGeneratedError = class extends (_b10 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a10 = symbol10, _b10) {
     // used in isInstance
     constructor({ message = "No output generated.", cause } = {}){
         super({
@@ -499,7 +497,7 @@ var NoOutputGeneratedError = class extends (_b10 = __TURBOPACK__imported__module
         this[_a10] = true;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker10);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker10);
     }
 };
 ;
@@ -507,7 +505,7 @@ var name11 = "AI_NoSpeechGeneratedError";
 var marker11 = `vercel.ai.error.${name11}`;
 var symbol11 = Symbol.for(marker11);
 var _a11, _b11;
-var NoSpeechGeneratedError = class extends (_b11 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a11 = symbol11, _b11) {
+var NoSpeechGeneratedError = class extends (_b11 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a11 = symbol11, _b11) {
     constructor(options){
         super({
             name: name11,
@@ -517,7 +515,7 @@ var NoSpeechGeneratedError = class extends (_b11 = __TURBOPACK__imported__module
         this.responses = options.responses;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker11);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker11);
     }
 };
 ;
@@ -525,7 +523,7 @@ var name12 = "AI_NoTranscriptGeneratedError";
 var marker12 = `vercel.ai.error.${name12}`;
 var symbol12 = Symbol.for(marker12);
 var _a12, _b12;
-var NoTranscriptGeneratedError = class extends (_b12 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a12 = symbol12, _b12) {
+var NoTranscriptGeneratedError = class extends (_b12 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a12 = symbol12, _b12) {
     constructor(options){
         super({
             name: name12,
@@ -535,7 +533,7 @@ var NoTranscriptGeneratedError = class extends (_b12 = __TURBOPACK__imported__mo
         this.responses = options.responses;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker12);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker12);
     }
 };
 ;
@@ -543,7 +541,7 @@ var name13 = "AI_NoTranslationGeneratedError";
 var marker13 = `vercel.ai.error.${name13}`;
 var symbol13 = Symbol.for(marker13);
 var _a13, _b13;
-var NoTranslationGeneratedError = class extends (_b13 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a13 = symbol13, _b13) {
+var NoTranslationGeneratedError = class extends (_b13 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a13 = symbol13, _b13) {
     constructor(options){
         super({
             name: name13,
@@ -553,7 +551,7 @@ var NoTranslationGeneratedError = class extends (_b13 = __TURBOPACK__imported__m
         this.response = options.response;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker13);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker13);
     }
 };
 ;
@@ -561,7 +559,7 @@ var name14 = "AI_NoVideoGeneratedError";
 var marker14 = `vercel.ai.error.${name14}`;
 var symbol14 = Symbol.for(marker14);
 var _a14, _b14;
-var NoVideoGeneratedError = class extends (_b14 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a14 = symbol14, _b14) {
+var NoVideoGeneratedError = class extends (_b14 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a14 = symbol14, _b14) {
     constructor({ message = "No video generated.", cause, responses }){
         super({
             name: name14,
@@ -572,7 +570,7 @@ var NoVideoGeneratedError = class extends (_b14 = __TURBOPACK__imported__module_
         this.responses = responses;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker14);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker14);
     }
     /**
    * @deprecated use `isInstance` instead
@@ -596,7 +594,7 @@ var name15 = "AI_NoSuchToolError";
 var marker15 = `vercel.ai.error.${name15}`;
 var symbol15 = Symbol.for(marker15);
 var _a15, _b15;
-var NoSuchToolError = class extends (_b15 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a15 = symbol15, _b15) {
+var NoSuchToolError = class extends (_b15 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a15 = symbol15, _b15) {
     constructor({ toolName, availableTools = void 0, message = `Model tried to call unavailable tool '${toolName}'. ${availableTools === void 0 ? "No tools are available." : `Available tools: ${availableTools.join(", ")}.`}` }){
         super({
             name: name15,
@@ -607,7 +605,7 @@ var NoSuchToolError = class extends (_b15 = __TURBOPACK__imported__module__$5b$p
         this.availableTools = availableTools;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker15);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker15);
     }
 };
 ;
@@ -615,7 +613,7 @@ var name16 = "AI_StreamProviderError";
 var marker16 = `vercel.ai.error.${name16}`;
 var symbol16 = Symbol.for(marker16);
 var _a16, _b16;
-var StreamProviderError = class extends (_b16 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a16 = symbol16, _b16) {
+var StreamProviderError = class extends (_b16 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a16 = symbol16, _b16) {
     constructor({ message, type, code, statusCode, isRetryable = isRetryableStatusCode(statusCode), data, cause }){
         super({
             name: name16,
@@ -630,7 +628,7 @@ var StreamProviderError = class extends (_b16 = __TURBOPACK__imported__module__$
         this.data = data;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker16);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker16);
     }
 };
 function isRetryableStatusCode(statusCode) {
@@ -641,8 +639,8 @@ var name17 = "AI_ToolCallRepairError";
 var marker17 = `vercel.ai.error.${name17}`;
 var symbol17 = Symbol.for(marker17);
 var _a17, _b17;
-var ToolCallRepairError = class extends (_b17 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a17 = symbol17, _b17) {
-    constructor({ cause, originalError, message = `Error repairing tool call: ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(cause)}` }){
+var ToolCallRepairError = class extends (_b17 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a17 = symbol17, _b17) {
+    constructor({ cause, originalError, message = `Error repairing tool call: ${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(cause)}` }){
         super({
             name: name17,
             message,
@@ -652,7 +650,7 @@ var ToolCallRepairError = class extends (_b17 = __TURBOPACK__imported__module__$
         this.originalError = originalError;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker17);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker17);
     }
 };
 ;
@@ -660,7 +658,7 @@ var name18 = "AI_ToolChoiceViolationError";
 var marker18 = `vercel.ai.error.${name18}`;
 var symbol18 = Symbol.for(marker18);
 var _a18, _b18;
-var ToolChoiceViolationError = class extends (_b18 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a18 = symbol18, _b18) {
+var ToolChoiceViolationError = class extends (_b18 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a18 = symbol18, _b18) {
     constructor({ toolChoice, finishReason, provider, modelId, content, message = toolChoice.type === "required" ? "Model response did not contain a tool call even though tool choice was required." : `Model response did not contain a call to the required tool '${toolChoice.toolName}'.` }){
         super({
             name: name18,
@@ -674,11 +672,11 @@ var ToolChoiceViolationError = class extends (_b18 = __TURBOPACK__imported__modu
         this.content = content;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker18);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker18);
     }
 };
 ;
-var UnsupportedModelVersionError = class extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"] {
+var UnsupportedModelVersionError = class extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"] {
     constructor(options){
         super({
             name: "AI_UnsupportedModelVersionError",
@@ -694,7 +692,7 @@ var name19 = "AI_UIMessageStreamError";
 var marker19 = `vercel.ai.error.${name19}`;
 var symbol19 = Symbol.for(marker19);
 var _a19, _b19;
-var UIMessageStreamError = class extends (_b19 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a19 = symbol19, _b19) {
+var UIMessageStreamError = class extends (_b19 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a19 = symbol19, _b19) {
     constructor({ chunkType, chunkId, message }){
         super({
             name: name19,
@@ -705,7 +703,7 @@ var UIMessageStreamError = class extends (_b19 = __TURBOPACK__imported__module__
         this.chunkId = chunkId;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker19);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker19);
     }
 };
 ;
@@ -713,7 +711,7 @@ var name20 = "AI_InvalidDataContentError";
 var marker20 = `vercel.ai.error.${name20}`;
 var symbol20 = Symbol.for(marker20);
 var _a20, _b20;
-var InvalidDataContentError = class extends (_b20 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a20 = symbol20, _b20) {
+var InvalidDataContentError = class extends (_b20 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a20 = symbol20, _b20) {
     constructor({ content, cause, message = `Invalid data content. Expected a base64 string, Uint8Array, ArrayBuffer, or Buffer, but got ${typeof content}.` }){
         super({
             name: name20,
@@ -724,7 +722,7 @@ var InvalidDataContentError = class extends (_b20 = __TURBOPACK__imported__modul
         this.content = content;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker20);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker20);
     }
 };
 ;
@@ -732,7 +730,7 @@ var name21 = "AI_InvalidMessageRoleError";
 var marker21 = `vercel.ai.error.${name21}`;
 var symbol21 = Symbol.for(marker21);
 var _a21, _b21;
-var InvalidMessageRoleError = class extends (_b21 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a21 = symbol21, _b21) {
+var InvalidMessageRoleError = class extends (_b21 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a21 = symbol21, _b21) {
     constructor({ role, message = `Invalid message role: '${role}'. Must be one of: "system", "user", "assistant", "tool".` }){
         super({
             name: name21,
@@ -742,7 +740,7 @@ var InvalidMessageRoleError = class extends (_b21 = __TURBOPACK__imported__modul
         this.role = role;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker21);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker21);
     }
 };
 ;
@@ -750,7 +748,7 @@ var name22 = "AI_MessageConversionError";
 var marker22 = `vercel.ai.error.${name22}`;
 var symbol22 = Symbol.for(marker22);
 var _a22, _b22;
-var MessageConversionError = class extends (_b22 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a22 = symbol22, _b22) {
+var MessageConversionError = class extends (_b22 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a22 = symbol22, _b22) {
     constructor({ originalMessage, message }){
         super({
             name: name22,
@@ -760,7 +758,7 @@ var MessageConversionError = class extends (_b22 = __TURBOPACK__imported__module
         this.originalMessage = originalMessage;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker22);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker22);
     }
 };
 ;
@@ -769,7 +767,7 @@ var name23 = "AI_RetryError";
 var marker23 = `vercel.ai.error.${name23}`;
 var symbol23 = Symbol.for(marker23);
 var _a23, _b23;
-var RetryError = class extends (_b23 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a23 = symbol23, _b23) {
+var RetryError = class extends (_b23 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"], _a23 = symbol23, _b23) {
     constructor({ message, reason, errors }){
         super({
             name: name23,
@@ -781,7 +779,7 @@ var RetryError = class extends (_b23 = __TURBOPACK__imported__module__$5b$projec
         this.lastError = errors[errors.length - 1];
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker23);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker23);
     }
 };
 // src/logger/log-warnings.ts
@@ -1196,7 +1194,7 @@ function resolveTranscriptionModel(model) {
 function resolveSpeechTranslationModel(model) {
     var _a25;
     if (typeof model === "string") {
-        const provider = (_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"];
+        const provider = (_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"];
         const speechTranslationModel = provider.speechTranslationModel;
         if (!speechTranslationModel) {
             throw new Error("The default provider does not support speech translation models. Please pass a provider model instance that implements the experimental speech translation model specification.");
@@ -1253,7 +1251,7 @@ function resolveImageModel(model) {
 function resolveVideoModel(model) {
     var _a25;
     if (typeof model === "string") {
-        const provider = (_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"];
+        const provider = (_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"];
         const videoModel = provider.videoModel;
         if (!videoModel) {
             throw new Error('The default provider does not support video models. Please use a Experimental_VideoModelV4 object from a provider (e.g., vertex.video("model-id")).');
@@ -1294,7 +1292,7 @@ function resolveRerankingModel(model) {
 }
 function getGlobalProvider() {
     var _a25;
-    const provider = (_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"];
+    const provider = (_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"];
     return asProviderV4(provider);
 }
 // src/prompt/clone-model-message.ts
@@ -1328,40 +1326,40 @@ function cloneValue(value) {
 ;
 ;
 // src/version.ts
-var VERSION = ("TURBOPACK compile-time truthy", 1) ? "7.0.99" : "TURBOPACK unreachable";
+var VERSION = ("TURBOPACK compile-time truthy", 1) ? "7.0.97" : "TURBOPACK unreachable";
 // src/util/download/download.ts
 var download = async ({ url, maxBytes, abortSignal })=>{
     var _a25;
     const urlText = url.toString();
     try {
-        const headers = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])({}, `ai-sdk/${VERSION}`, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getRuntimeEnvironmentUserAgent"])());
-        const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["fetchWithValidatedRedirects"])({
+        const headers = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])({}, `ai-sdk/${VERSION}`, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getRuntimeEnvironmentUserAgent"])());
+        const response = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["fetchWithValidatedRedirects"])({
             url: urlText,
             headers,
             abortSignal
         });
         if (!response.ok) {
-            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["cancelResponseBody"])(response);
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DownloadError"]({
+            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["cancelResponseBody"])(response);
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DownloadError"]({
                 url: urlText,
                 statusCode: response.status,
                 statusText: response.statusText
             });
         }
-        const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["readResponseWithSizeLimit"])({
+        const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["readResponseWithSizeLimit"])({
             response,
             url: urlText,
-            maxBytes: maxBytes != null ? maxBytes : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DEFAULT_MAX_DOWNLOAD_SIZE"]
+            maxBytes: maxBytes != null ? maxBytes : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DEFAULT_MAX_DOWNLOAD_SIZE"]
         });
         return {
             data,
             mediaType: (_a25 = response.headers.get("content-type")) != null ? _a25 : void 0
         };
     } catch (error) {
-        if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DownloadError"].isInstance(error)) {
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DownloadError"].isInstance(error)) {
             throw error;
         }
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DownloadError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DownloadError"]({
             url: urlText,
             cause: error
         });
@@ -1468,7 +1466,7 @@ function convertInlineDataToFilePartData(content) {
             mediaType: void 0
         };
     }
-    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isBuffer"])(content)) {
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isBuffer"])(content)) {
         return {
             data: {
                 type: "data",
@@ -1526,7 +1524,7 @@ function convertToLanguageModelV4FilePart(content) {
             return convertInlineDataToFilePartData(content);
         }
     }
-    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isProviderReference"])(content)) {
+    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isProviderReference"])(content)) {
         return {
             data: {
                 type: "reference",
@@ -1571,7 +1569,7 @@ provider }) {
                 role: "system",
                 content: prompt.instructions
             }
-        ] : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(prompt.instructions).map((message)=>({
+        ] : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(prompt.instructions).map((message)=>({
                 role: "system",
                 content: message.content,
                 providerOptions: message.providerOptions
@@ -1916,7 +1914,7 @@ async function downloadAssets(messages, download2, supportedUrls) {
         };
     }).filter((part)=>part.data.type === "url").map((part)=>({
             url: part.data.url,
-            isUrlSupportedByModel: part.mediaType != null && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isUrlSupported"])({
+            isUrlSupportedByModel: part.mediaType != null && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isUrlSupported"])({
                 url: part.data.url.toString(),
                 mediaType: part.mediaType,
                 supportedUrls
@@ -1949,13 +1947,13 @@ function convertPartToLanguageModelPart(part, downloadedAssets) {
                 type: "data",
                 data: downloadedFile.data
             };
-            if (downloadedFile.mediaType != null && (mediaType == null || !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isFullMediaType"])(mediaType))) {
+            if (downloadedFile.mediaType != null && (mediaType == null || !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isFullMediaType"])(mediaType))) {
                 mediaType = downloadedFile.mediaType;
             }
         }
     }
     if (data.type === "data" && (data.data instanceof Uint8Array || typeof data.data === "string")) {
-        const imageMediaType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+        const imageMediaType = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
             data: data.data,
             topLevelType: "image"
         });
@@ -2196,7 +2194,7 @@ async function createToolModelOutput({ toolCallId, input, output, tool: tool2, e
     if (errorMode === "text") {
         return {
             type: "error-text",
-            value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(output)
+            value: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(output)
         };
     } else if (errorMode === "json") {
         return {
@@ -2350,7 +2348,7 @@ async function prepareTools({ tools, toolOrder, toolsContext = {}, experimental_
                     languageModelTools.push({
                         type: "function",
                         name: name25,
-                        inputSchema: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema).jsonSchema,
+                        inputSchema: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema).jsonSchema,
                         ...description != null ? {
                             description
                         } : {},
@@ -2476,7 +2474,7 @@ var fileInlineDataSchema = z.union([
     z.string(),
     z.instanceof(Uint8Array),
     z.instanceof(ArrayBuffer),
-    z.custom(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isBuffer"], {
+    z.custom(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isBuffer"], {
         message: "Must be a Buffer"
     })
 ]);
@@ -2741,19 +2739,19 @@ var modelMessageSchema = z.union([
 // src/prompt/standardize-prompt.ts
 async function standardizePrompt({ allowSystemInMessages = false, system, instructions = system, prompt, messages }) {
     if (prompt == null && messages == null) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "prompt or messages must be defined"
         });
     }
     if (prompt != null && messages != null) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "prompt and messages cannot be defined at the same time"
         });
     }
-    if (typeof instructions !== "string" && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(instructions).every((message)=>message.role === "system")) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+    if (typeof instructions !== "string" && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(instructions).every((message)=>message.role === "system")) {
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "instructions must be a string, SystemModelMessage, or array of SystemModelMessage"
         });
@@ -2768,29 +2766,29 @@ async function standardizePrompt({ allowSystemInMessages = false, system, instru
     } else if (prompt != null && Array.isArray(prompt)) {
         messages = prompt;
     } else if (messages == null) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "prompt or messages must be defined"
         });
     }
     if (messages.length === 0) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "messages must not be empty"
         });
     }
     if (!allowSystemInMessages && messages.some((message)=>message.role === "system")) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "System messages are not allowed in the prompt or messages fields. Use the instructions option instead."
         });
     }
-    const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+    const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
         value: messages,
         schema: z.array(modelMessageSchema)
     });
     if (!validationResult.success) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidPromptError"]({
             prompt,
             message: "The messages do not match the ModelMessage[] schema.",
             cause: validationResult.error
@@ -2804,11 +2802,11 @@ async function standardizePrompt({ allowSystemInMessages = false, system, instru
 ;
 ;
 function wrapGatewayError(error) {
-    if (!__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GatewayAuthenticationError"].isInstance(error)) return error;
+    if (!__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GatewayAuthenticationError"].isInstance(error)) return error;
     const isProductionEnv = (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"] == null ? void 0 : ("TURBOPACK compile-time value", "development")) === "production";
     const moreInfoURL = "https://ai-sdk.dev/unauthenticated-ai-gateway";
     if (isProductionEnv) {
-        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"]({
+        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"]({
             name: "GatewayError",
             message: `Unauthenticated. Configure AI_GATEWAY_API_KEY or use a provider module. Learn more: ${moreInfoURL}`
         });
@@ -2893,7 +2891,7 @@ function getOwn(obj, key) {
 }
 ;
 function mergeAbortSignals(...signals) {
-    const validSignals = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(...signals).map((signal)=>typeof signal === "number" ? AbortSignal.timeout(signal) : signal);
+    const validSignals = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(...signals).map((signal)=>typeof signal === "number" ? AbortSignal.timeout(signal) : signal);
     return validSignals.length === 0 ? void 0 : validSignals.length === 1 ? validSignals[0] : AbortSignal.any(validSignals);
 }
 // src/util/now.ts
@@ -2903,7 +2901,7 @@ function now() {
 }
 ;
 async function notify(options) {
-    await Promise.all((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(options.callbacks).map(async (callback)=>{
+    await Promise.all((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(options.callbacks).map(async (callback)=>{
         try {
             await (callback == null ? void 0 : callback(options.event));
         } catch (e) {}
@@ -2913,7 +2911,7 @@ async function notify(options) {
 ;
 ;
 function getRetryDelayInMs({ error, exponentialBackoffDelay }) {
-    const headers = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APICallError"].isInstance(error) ? error.responseHeaders : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APICallError"].isInstance(error.cause) ? error.cause.responseHeaders : void 0;
+    const headers = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APICallError"].isInstance(error) ? error.responseHeaders : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APICallError"].isInstance(error.cause) ? error.cause.responseHeaders : void 0;
     if (!headers) return exponentialBackoffDelay;
     let ms;
     const retryAfterMs = headers["retry-after-ms"];
@@ -2937,12 +2935,12 @@ function getRetryDelayInMs({ error, exponentialBackoffDelay }) {
     }
     return exponentialBackoffDelay;
 }
-var retryWithExponentialBackoffRespectingRetryHeaders = ({ maxRetries = 2, initialDelayInMs = 2e3, backoffFactor = 2, abortSignal, additionalRetryableError } = {})=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["retryWithExponentialBackoff"])({
+var retryWithExponentialBackoffRespectingRetryHeaders = ({ maxRetries = 2, initialDelayInMs = 2e3, backoffFactor = 2, abortSignal, additionalRetryableError } = {})=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["retryWithExponentialBackoff"])({
         maxRetries,
         initialDelayInMs,
         backoffFactor,
         abortSignal,
-        shouldRetry: async (error)=>error instanceof Error && (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APICallError"].isInstance(error) && error.isRetryable === true || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GatewayError"].isInstance(error) && error.isRetryable === true) || additionalRetryableError != null && await additionalRetryableError(error),
+        shouldRetry: async (error)=>error instanceof Error && (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["APICallError"].isInstance(error) && error.isRetryable === true || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GatewayError"].isInstance(error) && error.isRetryable === true) || additionalRetryableError != null && await additionalRetryableError(error),
         getDelayInMs: ({ error, exponentialBackoffDelay })=>getRetryDelayInMs({
                 error,
                 exponentialBackoffDelay
@@ -3082,14 +3080,14 @@ var DefaultGeneratedFile = class {
     // lazy conversion with caching to avoid unnecessary conversion overhead:
     get base64() {
         if (this.base64Data == null) {
-            this.base64Data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(this.uint8ArrayData);
+            this.base64Data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(this.uint8ArrayData);
         }
         return this.base64Data;
     }
     // lazy conversion with caching to avoid unnecessary conversion overhead:
     get uint8Array() {
         if (this.uint8ArrayData == null) {
-            this.uint8ArrayData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(this.base64Data);
+            this.uint8ArrayData = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(this.base64Data);
         }
         return this.uint8ArrayData;
     }
@@ -3256,7 +3254,7 @@ async function validateToolContext({ toolName, context, contextSchema }) {
     if (contextSchema == null) {
         return context;
     }
-    return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+    return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
         value: context,
         schema: contextSchema,
         context: {
@@ -3269,7 +3267,7 @@ async function validateToolContext({ toolName, context, contextSchema }) {
 async function executeToolCall({ toolCall, tools, toolsContext, callId, messages, abortSignal, timeout, experimental_sandbox: sandbox, onPreliminaryToolResult, onToolExecutionStart, onToolExecutionEnd, executeToolInTelemetryContext = async ({ execute })=>await execute(), runInTracingChannelSpan = async ({ execute })=>await execute() }) {
     const { toolName, toolCallId, input } = toolCall;
     const tool2 = getOwn(tools, toolName);
-    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isExecutableTool"])(tool2)) {
+    if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isExecutableTool"])(tool2)) {
         return void 0;
     }
     const context = await validateToolContext({
@@ -3306,7 +3304,7 @@ async function executeToolCall({ toolCall, tools, toolsContext, callId, messages
                     execute: async ()=>{
                         const startTime = now();
                         try {
-                            const stream = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["executeTool"])({
+                            const stream = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["executeTool"])({
                                 tool: tool2,
                                 input,
                                 options: {
@@ -3807,7 +3805,7 @@ async function parsePartialJson(jsonText) {
             state: "undefined-input"
         };
     }
-    let result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+    let result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
         text: jsonText
     });
     if (result.success) {
@@ -3816,7 +3814,7 @@ async function parsePartialJson(jsonText) {
             state: "successful-parse"
         };
     }
-    result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+    result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
         text: fixJson(jsonText)
     });
     if (result.success) {
@@ -3849,10 +3847,10 @@ var text = ()=>({
         }
     });
 var object2 = ({ schema: inputSchema, name: name25, description })=>{
-    const schema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(inputSchema);
+    const schema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(inputSchema);
     return {
         name: "object",
-        responseFormat: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(schema.jsonSchema).then((jsonSchema2)=>({
+        responseFormat: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(schema.jsonSchema).then((jsonSchema2)=>({
                 type: "json",
                 schema: jsonSchema2,
                 ...name25 != null && {
@@ -3863,7 +3861,7 @@ var object2 = ({ schema: inputSchema, name: name25, description })=>{
                 }
             })),
         async parseCompleteOutput ({ text: text2 }, context) {
-            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
                 text: text2
             });
             if (!parseResult.success) {
@@ -3876,7 +3874,7 @@ var object2 = ({ schema: inputSchema, name: name25, description })=>{
                     finishReason: context.finishReason
                 });
             }
-            const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+            const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                 value: parseResult.value,
                 schema
             });
@@ -3931,11 +3929,11 @@ var array2 = ({ element: inputElementSchema, minItems, maxItems, name: name25, d
             message: "minItems must be less than or equal to maxItems"
         });
     }
-    const elementSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(inputElementSchema);
+    const elementSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(inputElementSchema);
     return {
         name: "array",
         // JSON schema that describes an array of elements:
-        responseFormat: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(elementSchema.jsonSchema).then((jsonSchema2)=>{
+        responseFormat: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(elementSchema.jsonSchema).then((jsonSchema2)=>{
             const { $schema: _$schema, definitions, $defs, ...itemSchema } = jsonSchema2;
             return {
                 type: "json",
@@ -3974,7 +3972,7 @@ var array2 = ({ element: inputElementSchema, minItems, maxItems, name: name25, d
             };
         }),
         async parseCompleteOutput ({ text: text2 }, context) {
-            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
                 text: text2
             });
             if (!parseResult.success) {
@@ -3991,7 +3989,7 @@ var array2 = ({ element: inputElementSchema, minItems, maxItems, name: name25, d
             if (outerValue == null || typeof outerValue !== "object" || !("elements" in outerValue) || !Array.isArray(outerValue.elements)) {
                 throw new NoObjectGeneratedError({
                     message: "No object generated: response did not match schema.",
-                    cause: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    cause: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value: outerValue,
                         cause: "response must be an object with an elements array"
                     }),
@@ -4018,7 +4016,7 @@ var array2 = ({ element: inputElementSchema, minItems, maxItems, name: name25, d
             }
             const validatedElements = [];
             for (const element of outerValue.elements){
-                const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+                const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                     value: element,
                     schema: elementSchema
                 });
@@ -4054,7 +4052,7 @@ var array2 = ({ element: inputElementSchema, minItems, maxItems, name: name25, d
                         const rawElements = result.state === "repaired-parse" && outerValue.elements.length > 0 ? outerValue.elements.slice(0, -1) : outerValue.elements;
                         const parsedElements = [];
                         for (const rawElement of rawElements){
-                            const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+                            const validationResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                                 value: rawElement,
                                 schema: elementSchema
                             });
@@ -4110,13 +4108,13 @@ function validateArrayBound({ name: name25, value }) {
 }
 function getArrayLengthValidationError({ value, minItems, maxItems }) {
     if (minItems != null && value.length < minItems) {
-        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
             value,
             cause: `elements array must contain at least ${minItems} items`
         });
     }
     if (maxItems != null && value.length > maxItems) {
-        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+        return new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
             value,
             cause: `elements array must contain at most ${maxItems} items`
         });
@@ -4151,7 +4149,7 @@ var choice = ({ options: choiceOptions, name: name25, description })=>{
             }
         }),
         async parseCompleteOutput ({ text: text2 }, context) {
-            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
                 text: text2
             });
             if (!parseResult.success) {
@@ -4168,7 +4166,7 @@ var choice = ({ options: choiceOptions, name: name25, description })=>{
             if (outerValue == null || typeof outerValue !== "object" || !("result" in outerValue) || typeof outerValue.result !== "string" || !choiceOptions.includes(outerValue.result)) {
                 throw new NoObjectGeneratedError({
                     message: "No object generated: response did not match schema.",
-                    cause: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    cause: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value: outerValue,
                         cause: "response must be an object that contains a choice value."
                     }),
@@ -4226,7 +4224,7 @@ var json = ({ name: name25, description } = {})=>{
             }
         }),
         async parseCompleteOutput ({ text: text2 }, context) {
-            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+            const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
                 text: text2
             });
             if (!parseResult.success) {
@@ -4297,7 +4295,7 @@ async function parseToolCall({ toolCall, tools, repairToolCall, refineToolInput,
                     inputSchema: async ({ toolName })=>{
                         var _a25;
                         const inputSchema = (_a25 = getOwn(tools, toolName)) == null ? void 0 : _a25.inputSchema;
-                        return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(inputSchema).jsonSchema;
+                        return await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(inputSchema).jsonSchema;
                     },
                     instructions,
                     system: instructions,
@@ -4322,7 +4320,7 @@ async function parseToolCall({ toolCall, tools, repairToolCall, refineToolInput,
             });
         }
     } catch (error) {
-        const parsedInput = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+        const parsedInput = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
             text: toolCall.input
         });
         const input = parsedInput.success ? parsedInput.value : toolCall.input;
@@ -4358,7 +4356,7 @@ async function parseProviderExecutedDynamicToolCall(toolCall) {
     const parseResult = toolCall.input.trim() === "" ? {
         success: true,
         value: {}
-    } : await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+    } : await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
         text: toolCall.input
     });
     if (parseResult.success === false) {
@@ -4390,11 +4388,11 @@ async function doParseToolCall({ toolCall, tools }) {
             availableTools: Object.keys(tools)
         });
     }
-    const schema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema);
-    const parseResult = toolCall.input.trim() === "" ? await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+    const schema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema);
+    const parseResult = toolCall.input.trim() === "" ? await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
         value: {},
         schema
-    }) : await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+    }) : await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
         text: toolCall.input,
         schema
     });
@@ -4553,13 +4551,6 @@ function normalizeToolApprovalStatus(status) {
         type: status
     } : status;
 }
-// src/telemetry/filter-included-context.ts
-function filterIncludedContext({ context, includeContext }) {
-    if (context == null) {
-        return {};
-    }
-    return Object.fromEntries(Object.entries(context).filter(([key])=>(includeContext == null ? void 0 : includeContext[key]) === true));
-}
 ;
 // src/util/merge-callbacks.ts
 function mergeCallbacks(...callbacks) {
@@ -4709,7 +4700,7 @@ function createTelemetryDispatcher({ telemetry }) {
         return {};
     }
     const localIntegrations = telemetry == null ? void 0 : telemetry.integrations;
-    const integrations = localIntegrations != null ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(localIntegrations) : getGlobalTelemetryIntegrations();
+    const integrations = localIntegrations != null ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(localIntegrations) : getGlobalTelemetryIntegrations();
     const telemetryMetadata = {
         recordInputs: telemetry == null ? void 0 : telemetry.recordInputs,
         recordOutputs: telemetry == null ? void 0 : telemetry.recordOutputs,
@@ -4863,6 +4854,12 @@ var DefaultStepResult = class {
     }
 };
 // src/generate-text/restricted-telemetry-dispatcher.ts
+function filterIncludedContext({ context, includeContext }) {
+    if (context == null) {
+        return {};
+    }
+    return Object.fromEntries(Object.entries(context).filter(([key])=>(includeContext == null ? void 0 : includeContext[key]) === true));
+}
 function restrictStepResult({ step, includeRuntimeContext, includeToolsContext }) {
     return new DefaultStepResult({
         callId: step.callId,
@@ -5270,7 +5267,7 @@ function resolveToolCallerConfiguration({ tools, toolCallers }) {
             if (caller === DIRECT_TOOL_CALL) {
                 return caller;
             }
-            if (typeof caller !== "string" || !Object.prototype.hasOwnProperty.call(tools, caller) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["experimental_getToolCaller"])(tools[caller]) == null) {
+            if (typeof caller !== "string" || !Object.prototype.hasOwnProperty.call(tools, caller) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["experimental_getToolCaller"])(tools[caller]) == null) {
                 throw new InvalidArgumentError({
                     parameter: "experimental_toolCallers",
                     value: toolCallers,
@@ -5310,7 +5307,7 @@ function prepareToolsForToolCallers({ tools, toolCallers }) {
                 availableDirectly = true;
                 continue;
             }
-            const caller = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["experimental_getToolCaller"])(executionTools[callerName]);
+            const caller = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["experimental_getToolCaller"])(executionTools[callerName]);
             if (caller == null) {
                 continue;
             }
@@ -5334,7 +5331,7 @@ function prepareToolsForToolCallers({ tools, toolCallers }) {
         }
     }
     for (const [callerName, callerTool] of Object.entries(executionTools)){
-        const caller = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["experimental_getToolCaller"])(callerTool);
+        const caller = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["experimental_getToolCaller"])(callerTool);
         if ((caller == null ? void 0 : caller.type) !== "local") {
             continue;
         }
@@ -5367,7 +5364,7 @@ function canonicalJSON(value) {
     return `{${entries.join(",")}}`;
 }
 function toBase64url(bytes) {
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(bytes).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(bytes).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/g, "");
 }
 async function hashCanonical(value) {
     const digest = await crypto.subtle.digest("SHA-256", encoder.encode(canonicalJSON(value)));
@@ -5376,7 +5373,7 @@ async function hashCanonical(value) {
 // src/generate-text/tool-approval-signature.ts
 var encoder2 = new TextEncoder();
 function fromBase64url(str) {
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(str);
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(str);
 }
 async function importKey(secret) {
     const keyData = typeof secret === "string" ? encoder2.encode(secret) : secret;
@@ -5467,10 +5464,10 @@ async function validateApprovedToolApprovals({ approvedToolApprovals, tools, too
                 });
             }
         }
-        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isExecutableTool"])(tool2) && tool2.inputSchema != null) {
-            const validation = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isExecutableTool"])(tool2) && tool2.inputSchema != null) {
+            const validation = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                 value: toolCall.input,
-                schema: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema)
+                schema: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema)
             });
             if (!validation.success) {
                 invalid.push({
@@ -5512,11 +5509,11 @@ async function validateApprovedToolApprovals({ approvedToolApprovals, tools, too
     };
 }
 // src/generate-text/generate-text.ts
-var originalGenerateId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "aitxt",
     size: 24
 });
-var originalGenerateCallId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateCallId = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "call",
     size: 24
 });
@@ -5532,7 +5529,7 @@ async function generateText({ model: modelArg, tools, toolChoice, instructions, 
         tools,
         toolCallers: experimental_toolCallers
     });
-    const stopConditions = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(stopWhen);
+    const stopConditions = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(stopWhen);
     const resolvedOnStart = onStart != null ? onStart : experimental_onStart;
     const resolvedOnStepStart = onStepStart != null ? onStepStart : experimental_onStepStart;
     const resolvedOnLanguageModelCallStart = onLanguageModelCallStart != null ? onLanguageModelCallStart : experimental_onLanguageModelCallStart;
@@ -5571,7 +5568,7 @@ async function generateText({ model: modelArg, tools, toolChoice, instructions, 
         abortSignal: mergedAbortSignal
     });
     const callSettings = prepareLanguageModelCallOptions(settings);
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const initialPrompt = await standardizePrompt({
         instructions,
         system,
@@ -6067,7 +6064,7 @@ async function generateText({ model: modelArg, tools, toolChoice, instructions, 
                                     toolCallId: toolCall.toolCallId,
                                     toolName: toolCall.toolName,
                                     input: toolCall.input,
-                                    error: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(toolCall.error),
+                                    error: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(toolCall.error),
                                     dynamic: true
                                 });
                             }
@@ -6560,7 +6557,7 @@ function getResponseUIMessageId({ originalMessages, responseMessageId }) {
 ;
 ;
 var toolMetadataSchema = z.record(z.string(), jsonValueSchema.optional());
-var uiMessageChunkSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["lazySchema"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["zodSchema"])(z.union([
+var uiMessageChunkSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["lazySchema"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["zodSchema"])(z.union([
         z.looseObject({
             type: z.literal("text-start"),
             id: z.string(),
@@ -6785,9 +6782,6 @@ function isDynamicToolUIPart(part) {
 function isToolUIPart(part) {
     return isStaticToolUIPart(part) || isDynamicToolUIPart(part);
 }
-function isToolOutputErrorUIPart(part) {
-    return isToolUIPart(part) && part.state === "output-error";
-}
 function getStaticToolName(part) {
     return part.type.split("-").slice(1).join("-");
 }
@@ -6971,7 +6965,7 @@ function processUIMessageStream({ stream, messageMetadataSchema, dataPartSchemas
                     if (metadata != null) {
                         const mergedMetadata = state.message.metadata != null ? mergeObjects(state.message.metadata, metadata) : metadata;
                         if (messageMetadataSchema != null) {
-                            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+                            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                                 value: mergedMetadata,
                                 schema: messageMetadataSchema,
                                 context: {
@@ -7442,7 +7436,7 @@ function processUIMessageStream({ stream, messageMetadataSchema, dataPartSchemas
                                 if ((dataPartSchemas == null ? void 0 : dataPartSchemas[chunk.type]) != null) {
                                     const partIdx = state.message.parts.findIndex((p)=>"id" in p && "data" in p && p.id === chunk.id && p.type === chunk.type);
                                     const actualPartIdx = partIdx >= 0 ? partIdx : state.message.parts.length;
-                                    await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+                                    await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                                         value: chunk.data,
                                         schema: dataPartSchemas[chunk.type],
                                         context: {
@@ -8527,14 +8521,14 @@ function invokeToolCallbacksFromStream({ stream, tools, stepInputMessages, abort
 ;
 function normalizeStreamProviderError(error) {
     var _a25, _b25, _c, _d, _e, _f, _g, _h, _i, _j, _k, _l, _m, _n, _o, _p;
-    if (isError(error) || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].isInstance(error) || StreamProviderError.isInstance(error)) {
+    if (isError(error) || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].isInstance(error) || StreamProviderError.isInstance(error)) {
         return error;
     }
     const outer = asRecord(error);
     if (outer == null) {
         return error;
     }
-    const providerStreamError = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isProviderStreamError"])(error);
+    const providerStreamError = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isProviderStreamError"])(error);
     const details = providerStreamError ? outer : (_c = (_b25 = asRecord((_a25 = asRecord(outer.response)) == null ? void 0 : _a25.error)) != null ? _b25 : asRecord(outer.error)) != null ? _c : outer;
     if (typeof details.message !== "string") {
         return error;
@@ -8600,11 +8594,11 @@ function getHttpStatusCode(value) {
     return typeof statusCode === "number" && Number.isInteger(statusCode) && statusCode >= 400 && statusCode <= 599 ? statusCode : void 0;
 }
 // src/generate-text/stream-language-model-call.ts
-var originalGenerateId2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateId2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "aitxt",
     size: 24
 });
-var originalGenerateCallId2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateCallId2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "call",
     size: 24
 });
@@ -8925,7 +8919,7 @@ function createLanguageModelV4StreamPartToLanguageModelStreamPartTransform({ too
                                         toolCallId: toolCall.toolCallId,
                                         toolName: toolCall.toolName,
                                         input: toolCall.input,
-                                        error: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(toolCall.error),
+                                        error: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(toolCall.error),
                                         dynamic: true,
                                         title: toolCall.title,
                                         ...toolCall.toolMetadata != null ? {
@@ -9103,11 +9097,11 @@ function upsertTextContentPart({ content, rawContent, partIndexes, rawPartIndexe
     }
 }
 // src/generate-text/stream-text.ts
-var originalGenerateId3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateId3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "aitxt",
     size: 24
 });
-var originalGenerateCallId3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateCallId3 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "call",
     size: 24
 });
@@ -9198,12 +9192,12 @@ function streamText({ model, tools, toolChoice, instructions, system, prompt, me
         toolsContext,
         runtimeContext,
         toolChoice,
-        transforms: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(transform),
+        transforms: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(transform),
         activeTools,
         toolOrder,
         repairToolCall,
         refineToolInput,
-        stopConditions: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(stopWhen),
+        stopConditions: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(stopWhen),
         output,
         toolApproval,
         experimental_toolCallers,
@@ -9427,11 +9421,11 @@ function applyStreamTextTransforms({ stream, transforms, tools, stopStream }) {
 }
 var DefaultStreamTextResult = class {
     constructor({ model, telemetry, headers, settings, maxRetries: maxRetriesArg, streamRetries: streamRetriesArg, abortSignal, stepTimeoutMs, stepAbortController, firstChunkTimeoutMs, firstChunkAbortController, chunkTimeoutMs, chunkAbortController, instructions, system, prompt, messages, allowSystemInMessages, experimental_sandbox: sandbox, tools, toolChoice, transforms, activeTools, toolOrder, repairToolCall, refineToolInput, stopConditions, output, toolApproval, experimental_toolCallers, experimental_toolApprovalSecret, providerOptions, prepareStep, now: now2, generateId: generateId4, generateCallId, timeout, onChunk, onError, canRetryStreamViaOnError, onEnd, onAbort, onStepFinish, onStart, onStepStart, onLanguageModelCallStart, onLanguageModelCallEnd, onToolExecutionStart, onToolExecutionEnd, runtimeContext, toolsContext, download: download2, include }){
-        this._totalUsage = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._finishReason = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._rawFinishReason = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._steps = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._initialResponseMessages = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._totalUsage = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._finishReason = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._rawFinishReason = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._steps = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._initialResponseMessages = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
         this.outputSpecification = output;
         this.tools = tools;
         const resolvedToolCallers = resolveToolCallerConfiguration({
@@ -9789,7 +9783,7 @@ var DefaultStreamTextResult = class {
                         // so we use getErrorMessage for serialization because it is already designed to accept values of the unknown type.
                         // See: https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal/reason
                         ...(abortSignal == null ? void 0 : abortSignal.reason) !== void 0 ? {
-                            reason: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(abortSignal.reason)
+                            reason: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(abortSignal.reason)
                         } : {}
                     });
                     controller.close();
@@ -9806,7 +9800,7 @@ var DefaultStreamTextResult = class {
                     }
                     controller.enqueue(value);
                 } catch (error) {
-                    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isAbortError"])(error) && (abortSignal == null ? void 0 : abortSignal.aborted)) {
+                    if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isAbortError"])(error) && (abortSignal == null ? void 0 : abortSignal.aborted)) {
                         await abort();
                     } else {
                         controller.error(error);
@@ -9947,7 +9941,7 @@ var DefaultStreamTextResult = class {
                             toolCallId: toolApproval2.toolCall.toolCallId,
                             toolName: toolApproval2.toolCall.toolName,
                             input: toolApproval2.toolCall.input,
-                            error: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(toolApproval2.error),
+                            error: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getErrorMessage"])(toolApproval2.error),
                             title: toolApproval2.toolCall.title,
                             ...toolApproval2.toolCall.dynamic === true ? {
                                 dynamic: true
@@ -9968,8 +9962,8 @@ var DefaultStreamTextResult = class {
                             timeout,
                             experimental_sandbox: sandbox,
                             toolsContext,
-                            onToolExecutionStart: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionStart, telemetryDispatcher.onToolExecutionStart),
-                            onToolExecutionEnd: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionEnd, telemetryDispatcher.onToolExecutionEnd),
+                            onToolExecutionStart: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionStart, telemetryDispatcher.onToolExecutionStart),
+                            onToolExecutionEnd: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionEnd, telemetryDispatcher.onToolExecutionEnd),
                             executeToolInTelemetryContext: telemetryDispatcher.executeTool,
                             runInTracingChannelSpan: runInTracingChannelSpanInStreamText,
                             onPreliminaryToolResult: (result2)=>{
@@ -10091,7 +10085,7 @@ var DefaultStreamTextResult = class {
                     once: true
                 });
                 try {
-                    stepFinish = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+                    stepFinish = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
                     const stepTracingChannelContext = (_a26 = telemetryDispatcher.startTracingChannelContext) == null ? void 0 : _a26.call(telemetryDispatcher, {
                         type: "step",
                         event: {
@@ -10186,8 +10180,8 @@ var DefaultStreamTextResult = class {
                                     executeLanguageModelCallInTelemetryContext: telemetryDispatcher.executeLanguageModelCall,
                                     toolsContext,
                                     experimental_sandbox: stepSandbox,
-                                    onLanguageModelCallStart: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onLanguageModelCallStart, telemetryDispatcher.onLanguageModelCallStart),
-                                    onLanguageModelCallEnd: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onLanguageModelCallEnd, telemetryDispatcher.onLanguageModelCallEnd),
+                                    onLanguageModelCallStart: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onLanguageModelCallStart, telemetryDispatcher.onLanguageModelCallStart),
+                                    onLanguageModelCallEnd: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onLanguageModelCallEnd, telemetryDispatcher.onLanguageModelCallEnd),
                                     onStart: async ({ promptMessages })=>{
                                         var _a28, _b27;
                                         if (hasNotifiedStepStart) {
@@ -10390,8 +10384,8 @@ var DefaultStreamTextResult = class {
                         generateId: generateId4,
                         // the callbacks need to be passed down and handled by executeToolCall
                         // to guarantee that the onToolExecutionStart callback is invoked before the tool execute function
-                        onToolExecutionStart: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionStart, telemetryDispatcher.onToolExecutionStart),
-                        onToolExecutionEnd: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionEnd, telemetryDispatcher.onToolExecutionEnd),
+                        onToolExecutionStart: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionStart, telemetryDispatcher.onToolExecutionStart),
+                        onToolExecutionEnd: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["filterNullable"])(onToolExecutionEnd, telemetryDispatcher.onToolExecutionEnd),
                         executeToolInTelemetryContext: telemetryDispatcher.executeTool,
                         runInTracingChannelSpan: runInTracingChannelSpanInStep
                     });
@@ -10906,7 +10900,7 @@ var DefaultStreamTextResult = class {
         var _a25, _b25, _c;
         const transform = (_a25 = this.outputSpecification) == null ? void 0 : _a25.createElementStreamTransform();
         if (transform == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
                 functionality: `element streams in ${(_c = (_b25 = this.outputSpecification) == null ? void 0 : _b25.name) != null ? _c : "text"} mode`
             });
         }
@@ -11016,7 +11010,7 @@ var ToolLoopAgent = class {
     async prepareCall(options) {
         var _a25, _b25, _c, _d;
         if (this.settings.callOptionsSchema != null && options.options !== void 0) {
-            const validatedOptions = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+            const validatedOptions = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                 value: options.options,
                 schema: this.settings.callOptionsSchema,
                 context: {
@@ -11060,7 +11054,7 @@ var ToolLoopAgent = class {
    * downstream by generateText/streamText and the provider.
    */ agentHeaders(preparedCall) {
         var _a25;
-        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])((_a25 = preparedCall.headers) != null ? _a25 : {}, "ai-sdk-agent/tool-loop");
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])((_a25 = preparedCall.headers) != null ? _a25 : {}, "ai-sdk-agent/tool-loop");
     }
     /**
    * Generates an output from the agent (non-streaming).
@@ -11118,7 +11112,7 @@ var ToolLoopAgent = class {
 };
 ;
 function createUIMessageStream({ execute, onError = ()=>"An error occurred.", // prevent leaking server error details to the client by default
-originalMessages, onStepEnd, onStepFinish, onEnd, onFinish, generateId: generateId4 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"] }) {
+originalMessages, onStepEnd, onStepFinish, onEnd, onFinish, generateId: generateId4 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"] }) {
     let controller;
     const ongoingStreamPromises = [];
     let outcome = {
@@ -11348,7 +11342,7 @@ async function convertToModelMessages(messages, options) {
                             if (isDataUIPart(part)) {
                                 return (_a25 = options == null ? void 0 : options.convertDataPart) == null ? void 0 : _a25.call(options, part);
                             }
-                        }).filter(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isNonNullable"])
+                        }).filter(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isNonNullable"])
                     });
                     break;
                 }
@@ -11597,7 +11591,7 @@ function asDynamicToolPart(toolPart) {
         toolName: type.slice(5)
     };
 }
-var uiMessagesSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["lazySchema"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["zodSchema"])(z.array(z.object({
+var uiMessagesSchema = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["lazySchema"])(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["zodSchema"])(z.array(z.object({
         id: z.string(),
         role: z.enum([
             "system",
@@ -11972,13 +11966,13 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                 })
             };
         }
-        const validatedMessages = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+        const validatedMessages = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
             value: messages,
             schema: uiMessagesSchema
         });
         if (metadataSchema) {
             for (const [msgIdx, message] of validatedMessages.entries()){
-                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+                await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                     value: message.metadata,
                     schema: metadataSchema,
                     context: {
@@ -11999,7 +11993,7 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                         if (!dataSchema) {
                             return {
                                 success: false,
-                                error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                                error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                                     value: dataPart.data,
                                     cause: `No data schema found for data part ${dataName}`,
                                     context: {
@@ -12010,7 +12004,7 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                                 })
                             };
                         }
-                        await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+                        await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                             value: dataPart.data,
                             schema: dataSchema,
                             context: {
@@ -12034,7 +12028,7 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                         if (!tool2) {
                             return {
                                 success: false,
-                                error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                                error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                                     value: toolPart.input,
                                     cause: `No tool schema found for tool part ${toolName}`,
                                     context: {
@@ -12053,7 +12047,7 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                         let convertToDynamic = false;
                         if (toolPart.state === "output-error") {
                             if (toolPart.input !== void 0) {
-                                const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+                                const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                                     value: toolPart.input,
                                     schema: tool2.inputSchema,
                                     context: inputValidationContext
@@ -12061,7 +12055,7 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                                 convertToDynamic = !result.success;
                             }
                         } else if (toolPart.state === "output-available") {
-                            const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+                            const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                                 value: toolPart.input,
                                 schema: tool2.inputSchema,
                                 context: inputValidationContext
@@ -12074,14 +12068,14 @@ async function safeValidateUIMessagesInternal({ messages, metadataSchema, dataSc
                                 }
                             }
                         } else if (toolPart.state === "input-available" || toolPart.state === "approval-requested" || toolPart.state === "approval-responded" || toolPart.state === "output-denied") {
-                            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+                            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                                 value: toolPart.input,
                                 schema: tool2.inputSchema,
                                 context: inputValidationContext
                             });
                         }
                         if (toolPart.state === "output-available" && tool2.outputSchema) {
-                            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
+                            await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["validateTypes"])({
                                 value: toolPart.output,
                                 schema: tool2.outputSchema,
                                 context: {
@@ -12183,294 +12177,6 @@ async function pipeAgentUIStreamToResponse({ response, headers, status, statusTe
 ;
 ;
 ;
-;
-;
-;
-function convertDataContentToBase64String(content) {
-    if (typeof content === "string") {
-        return content;
-    }
-    if (content instanceof ArrayBuffer) {
-        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(new Uint8Array(content));
-    }
-    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(content);
-}
-function convertDataContentToUint8Array(content) {
-    if (content instanceof Uint8Array) {
-        return content;
-    }
-    if (typeof content === "string") {
-        try {
-            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(content);
-        } catch (error) {
-            throw new InvalidDataContentError({
-                message: "Invalid data content. Content string is not a base64-encoded media.",
-                content,
-                cause: error
-            });
-        }
-    }
-    if (content instanceof ArrayBuffer) {
-        return new Uint8Array(content);
-    }
-    throw new InvalidDataContentError({
-        content
-    });
-}
-// src/generate-image/generate-image.ts
-var gatewayCostMetadataKeys = [
-    "cost",
-    "gatewayCost",
-    "inferenceCost",
-    "inputInferenceCost",
-    "marketCost",
-    "outputInferenceCost",
-    "surchargeCost"
-];
-var RetryableNoImageResultError = class extends Error {
-    constructor(){
-        super("No image generated.");
-        this.name = "RetryableNoImageResultError";
-    }
-};
-async function generateImage({ model: modelArg, prompt: promptArg, n = 1, maxImagesPerCall, size, aspectRatio, seed, providerOptions, maxRetries: maxRetriesArg, abortSignal, headers }) {
-    var _a25, _b25;
-    const model = resolveImageModel(modelArg);
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
-    const { retry } = prepareRetries({
-        maxRetries: maxRetriesArg,
-        abortSignal,
-        additionalRetryableError: (error)=>error instanceof RetryableNoImageResultError
-    });
-    const maxImagesPerCallWithDefault = (_a25 = maxImagesPerCall != null ? maxImagesPerCall : await invokeModelMaxImagesPerCall(model)) != null ? _a25 : 1;
-    const callCount = Math.ceil(n / maxImagesPerCallWithDefault);
-    const callImageCounts = Array.from({
-        length: callCount
-    }, (_, i)=>{
-        if (i < callCount - 1) {
-            return maxImagesPerCallWithDefault;
-        }
-        const remainder = n % maxImagesPerCallWithDefault;
-        return remainder === 0 ? maxImagesPerCallWithDefault : remainder;
-    });
-    const resultGroups = await Promise.all(callImageCounts.map(async (callImageCount)=>{
-        const callResults = [];
-        try {
-            await retry(async ()=>{
-                const { prompt, files, mask } = normalizePrompt(promptArg);
-                const result = await model.doGenerate({
-                    prompt,
-                    files,
-                    mask,
-                    n: callImageCount,
-                    abortSignal,
-                    headers: headersWithUserAgent,
-                    size,
-                    aspectRatio,
-                    seed,
-                    providerOptions: providerOptions != null ? providerOptions : {}
-                });
-                callResults.push(result);
-                if (result.images.length === 0 && result.isRetryable !== false) {
-                    throw new RetryableNoImageResultError();
-                }
-                return result;
-            });
-            return callResults;
-        } catch (error) {
-            const noImageResultError = error instanceof RetryableNoImageResultError ? error : RetryError.isInstance(error) && error.lastError instanceof RetryableNoImageResultError ? error.lastError : void 0;
-            if (noImageResultError != null) {
-                return callResults;
-            }
-            throw error;
-        }
-    }));
-    const results = resultGroups.flat();
-    const images = [];
-    const calls = [];
-    const warnings = [];
-    const responses = [];
-    const providerMetadata = {};
-    let totalUsage = {
-        inputTokens: void 0,
-        outputTokens: void 0,
-        totalTokens: void 0
-    };
-    for (const result of results){
-        const callImages = result.images.map((image, index)=>{
-            var _a26;
-            return new DefaultGeneratedFile({
-                data: image,
-                mediaType: (_a26 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
-                    data: image,
-                    topLevelType: "image"
-                })) != null ? _a26 : "image/png",
-                providerMetadata: getImageProviderMetadata(result.providerMetadata, index)
-            });
-        });
-        images.push(...callImages);
-        calls.push({
-            images: callImages,
-            providerMetadata: result.providerMetadata,
-            response: result.response,
-            warnings: result.warnings,
-            usage: result.usage
-        });
-        warnings.push(...result.warnings);
-        if (result.usage != null) {
-            totalUsage = addImageModelUsage(totalUsage, result.usage);
-        }
-        if (result.providerMetadata) {
-            for (const [providerName, metadata] of Object.entries(result.providerMetadata)){
-                if (providerName === "gateway") {
-                    const currentEntry = providerMetadata[providerName];
-                    if (currentEntry != null && typeof currentEntry === "object") {
-                        const currentGatewayMetadata = currentEntry;
-                        const newGatewayMetadata = metadata;
-                        providerMetadata[providerName] = {
-                            ...currentEntry,
-                            ...metadata,
-                            ...Object.fromEntries(gatewayCostMetadataKeys.flatMap((key)=>{
-                                const total = addDecimalStrings(currentGatewayMetadata[key], newGatewayMetadata[key]);
-                                return total == null ? [] : [
-                                    [
-                                        key,
-                                        total
-                                    ]
-                                ];
-                            }))
-                        };
-                    } else {
-                        providerMetadata[providerName] = {
-                            ...metadata
-                        };
-                    }
-                    const imagesValue = providerMetadata[providerName].images;
-                    if (Array.isArray(imagesValue) && imagesValue.length === 0) {
-                        delete providerMetadata[providerName].images;
-                    }
-                } else {
-                    (_b25 = providerMetadata[providerName]) != null ? _b25 : providerMetadata[providerName] = {
-                        images: []
-                    };
-                    providerMetadata[providerName].images.push(...metadata.images);
-                }
-            }
-        }
-        responses.push(result.response);
-    }
-    logWarnings({
-        warnings,
-        provider: model.provider,
-        model: model.modelId
-    });
-    if (!images.length) {
-        throw new NoImageGeneratedError({
-            calls,
-            responses
-        });
-    }
-    return new DefaultGenerateImageResult({
-        images,
-        calls,
-        warnings,
-        responses,
-        providerMetadata,
-        usage: totalUsage
-    });
-}
-var DefaultGenerateImageResult = class {
-    constructor(options){
-        this.images = options.images;
-        this.calls = options.calls;
-        this.warnings = options.warnings;
-        this.responses = options.responses;
-        this.providerMetadata = options.providerMetadata;
-        this.usage = options.usage;
-    }
-    get image() {
-        return this.images[0];
-    }
-};
-function getImageProviderMetadata(providerMetadata, imageIndex) {
-    var _a25;
-    if (providerMetadata == null) {
-        return void 0;
-    }
-    let imageMetadata;
-    for (const [providerName, metadata] of Object.entries(providerMetadata)){
-        const value = (_a25 = metadata.images) == null ? void 0 : _a25[imageIndex];
-        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) && !Array.isArray(value)) {
-            (imageMetadata != null ? imageMetadata : imageMetadata = {})[providerName] = value;
-        }
-    }
-    return imageMetadata;
-}
-async function invokeModelMaxImagesPerCall(model) {
-    const isFunction = model.maxImagesPerCall instanceof Function;
-    if (!isFunction) {
-        return model.maxImagesPerCall;
-    }
-    return model.maxImagesPerCall({
-        modelId: model.modelId
-    });
-}
-function addDecimalStrings(value1, value2) {
-    if (typeof value1 !== "string" || typeof value2 !== "string" || !/^\d+(?:\.\d+)?$/.test(value1) || !/^\d+(?:\.\d+)?$/.test(value2)) {
-        return void 0;
-    }
-    const [integer1, fraction1 = ""] = value1.split(".");
-    const [integer2, fraction2 = ""] = value2.split(".");
-    const precision = Math.max(fraction1.length, fraction2.length);
-    const sum = BigInt(integer1 + fraction1.padEnd(precision, "0")) + BigInt(integer2 + fraction2.padEnd(precision, "0"));
-    const sumString = sum.toString().padStart(precision + 1, "0");
-    return precision === 0 ? sumString : `${sumString.slice(0, -precision)}.${sumString.slice(-precision)}`.replace(/\.?0+$/, "");
-}
-function normalizePrompt(prompt) {
-    if (typeof prompt === "string") {
-        return {
-            prompt,
-            files: void 0,
-            mask: void 0
-        };
-    }
-    return {
-        prompt: prompt.text,
-        files: prompt.images.map(toImageModelV4File),
-        mask: prompt.mask ? toImageModelV4File(prompt.mask) : void 0
-    };
-}
-function toImageModelV4File(dataContent) {
-    if (typeof dataContent === "string" && dataContent.startsWith("http")) {
-        return {
-            type: "url",
-            url: dataContent
-        };
-    }
-    if (typeof dataContent === "string" && dataContent.startsWith("data:")) {
-        const { mediaType: dataUrlMediaType, base64Content } = splitDataUrl(dataContent);
-        if (base64Content != null) {
-            const uint8Data2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(base64Content);
-            return {
-                type: "file",
-                data: uint8Data2,
-                mediaType: dataUrlMediaType || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
-                    data: uint8Data2,
-                    topLevelType: "image"
-                }) || "image/png"
-            };
-        }
-    }
-    const uint8Data = convertDataContentToUint8Array(dataContent);
-    return {
-        type: "file",
-        data: uint8Data,
-        mediaType: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
-            data: uint8Data,
-            topLevelType: "image"
-        }) || "image/png"
-    };
-}
 // src/util/is-deep-equal-data.ts
 function isDeepEqualData(obj1, obj2) {
     if (obj1 === obj2) return true;
@@ -12504,7 +12210,7 @@ async function cancelBatch({ provider, batch, providerOptions, abortSignal, head
         batch
     });
     if (batchApi.doCancelBatch == null) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
             functionality: "batch cancellation",
             message: "The provider does not support batch cancellation."
         });
@@ -12515,7 +12221,7 @@ async function cancelBatch({ provider, batch, providerOptions, abortSignal, head
             batchId: batch.id,
             providerOptions,
             abortSignal: operationAbortSignal,
-            headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`)
+            headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`)
         });
     } catch (error) {
         throw wrapGatewayError(error);
@@ -12526,7 +12232,7 @@ async function listBatches({ provider, providerOptions, limit, cursor, maxRetrie
     const batchApi = resolveBatchApi(provider);
     const doListBatches = (_a25 = batchApi.doListBatches) == null ? void 0 : _a25.bind(batchApi);
     if (doListBatches == null) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
             functionality: "batch listing",
             message: "The provider does not support listing batches."
         });
@@ -12540,7 +12246,7 @@ async function listBatches({ provider, providerOptions, limit, cursor, maxRetrie
         const { batches, nextCursor, providerMetadata } = await retry(()=>doListBatches({
                 providerOptions,
                 abortSignal: operationAbortSignal,
-                headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`),
+                headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`),
                 ...limit != null && {
                     limit
                 },
@@ -12567,7 +12273,6 @@ async function listBatches({ provider, providerOptions, limit, cursor, maxRetrie
     }
 }
 async function startBatch({ provider, requests, providerOptions, webhookUrl, abortSignal, headers, timeout }) {
-    var _a25, _b25;
     validateRequests(requests);
     const batchApi = resolveBatchApi(provider);
     const operationAbortSignal = mergeAbortSignals(abortSignal, getTotalTimeoutMs(timeout));
@@ -12576,8 +12281,7 @@ async function startBatch({ provider, requests, providerOptions, webhookUrl, abo
     const normalizedRequests = [];
     const toolsByName = /* @__PURE__ */ new Map();
     for (const request of requests){
-        const requestType = request.type;
-        switch(requestType){
+        switch(request.type){
             case "text":
                 {
                     const standardizedPrompt = await standardizePrompt(request);
@@ -12612,39 +12316,10 @@ async function startBatch({ provider, requests, providerOptions, webhookUrl, abo
                     });
                     break;
                 }
-            case "image":
-                {
-                    const { prompt, files, mask } = normalizePrompt(request.prompt);
-                    normalizedRequests.push({
-                        id: request.id,
-                        type: request.type,
-                        modelId: request.model,
-                        options: {
-                            prompt,
-                            n: (_a25 = request.n) != null ? _a25 : 1,
-                            size: request.size,
-                            aspectRatio: request.aspectRatio,
-                            seed: request.seed,
-                            files,
-                            mask,
-                            providerOptions: (_b25 = request.providerOptions) != null ? _b25 : {}
-                        }
-                    });
-                    break;
-                }
-            default:
-                {
-                    const _exhaustiveCheck = requestType;
-                    throw new InvalidArgumentError({
-                        parameter: "requests",
-                        value: _exhaustiveCheck,
-                        message: `Unsupported batch request type "${_exhaustiveCheck}".`
-                    });
-                }
         }
         operationAbortSignal == null ? void 0 : operationAbortSignal.throwIfAborted();
     }
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     try {
         const result = await batchApi.doStartBatch({
             requests: normalizedRequests,
@@ -12709,7 +12384,7 @@ async function getBatchStatus({ provider, batch, providerOptions, maxRetries, ab
                 batchId: batch.id,
                 providerOptions,
                 abortSignal: operationAbortSignal,
-                headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`)
+                headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`)
             }));
         return status;
     } catch (error) {
@@ -12746,7 +12421,7 @@ function getBatchResults({ provider, batch, tools, providerOptions, maxRetries, 
                     batchId: batch.id,
                     providerOptions,
                     abortSignal: operationAbortSignal,
-                    headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`)
+                    headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`)
                 }));
             await stream.pipeTo(transform.writable, {
                 signal: operationAbortSignal
@@ -12759,12 +12434,12 @@ function getBatchResults({ provider, batch, tools, providerOptions, maxRetries, 
 }
 function resolveBatchApi(provider) {
     var _a25;
-    provider != null ? provider : provider = asProviderV4((_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"]);
+    provider != null ? provider : provider = asProviderV4((_a25 = globalThis.AI_SDK_DEFAULT_PROVIDER) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$react$2f$node_modules$2f40$ai$2d$sdk$2f$gateway$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["gateway"]);
     if (isBatchApi(provider)) {
         return provider;
     }
     if (!hasBatchFactory(provider)) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
             functionality: "batch processing",
             message: "The provider does not support batch processing. Make sure it exposes an experimental_batch() method."
         });
@@ -12827,7 +12502,6 @@ async function convertBatchItemResult({ item, tools }) {
             switch(item.status){
                 case "succeeded":
                     return {
-                        type: item.type,
                         id: item.id,
                         status: item.status,
                         ...await convertGenerateResult({
@@ -12837,7 +12511,6 @@ async function convertBatchItemResult({ item, tools }) {
                     };
                 case "failed":
                     return {
-                        type: item.type,
                         id: item.id,
                         status: item.status,
                         error: item.error,
@@ -12846,34 +12519,6 @@ async function convertBatchItemResult({ item, tools }) {
                 case "cancelled":
                 case "expired":
                     return {
-                        type: item.type,
-                        id: item.id,
-                        status: item.status,
-                        error: item.error,
-                        providerMetadata: item.providerMetadata
-                    };
-            }
-        case "image":
-            switch(item.status){
-                case "succeeded":
-                    return {
-                        type: item.type,
-                        id: item.id,
-                        status: item.status,
-                        ...convertImageResult(item.result)
-                    };
-                case "failed":
-                    return {
-                        type: item.type,
-                        id: item.id,
-                        status: item.status,
-                        error: item.error,
-                        providerMetadata: item.providerMetadata
-                    };
-                case "cancelled":
-                case "expired":
-                    return {
-                        type: item.type,
                         id: item.id,
                         status: item.status,
                         error: item.error,
@@ -12881,29 +12526,6 @@ async function convertBatchItemResult({ item, tools }) {
                     };
             }
     }
-}
-function convertImageResult(result) {
-    return {
-        images: result.images.map((image, index)=>{
-            var _a25;
-            return new DefaultGeneratedFile({
-                data: image,
-                mediaType: (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
-                    data: image,
-                    topLevelType: "image"
-                })) != null ? _a25 : "image/png",
-                providerMetadata: getImageProviderMetadata(result.providerMetadata, index)
-            });
-        }),
-        warnings: result.warnings,
-        response: {
-            timestamp: result.response.timestamp,
-            modelId: result.response.modelId,
-            headers: result.response.headers
-        },
-        providerMetadata: result.providerMetadata,
-        usage: result.usage
-    };
 }
 async function convertGenerateResult({ result, tools }) {
     var _a25;
@@ -12940,41 +12562,11 @@ async function convertGenerateResult({ result, tools }) {
     };
 }
 ;
-// src/embed/restricted-telemetry-dispatcher.ts
-function createRestrictedTelemetryDispatcher2({ telemetry }) {
-    const dispatcher = createTelemetryDispatcher({
-        telemetry
-    });
-    return {
-        ...dispatcher,
-        onStart: (event)=>{
-            var _a25;
-            return (_a25 = dispatcher.onStart) == null ? void 0 : _a25.call(dispatcher, {
-                ...event,
-                runtimeContext: filterIncludedContext({
-                    context: event.runtimeContext,
-                    includeContext: telemetry == null ? void 0 : telemetry.includeRuntimeContext
-                })
-            });
-        },
-        onEnd: (event)=>{
-            var _a25;
-            return (_a25 = dispatcher.onEnd) == null ? void 0 : _a25.call(dispatcher, {
-                ...event,
-                runtimeContext: filterIncludedContext({
-                    context: event.runtimeContext,
-                    includeContext: telemetry == null ? void 0 : telemetry.includeRuntimeContext
-                })
-            });
-        }
-    };
-}
-// src/embed/embed.ts
-var originalGenerateCallId4 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateCallId4 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "call",
     size: 24
 });
-async function embed({ model: modelArg, value, providerOptions, maxRetries: maxRetriesArg, abortSignal, headers, experimental_telemetry, telemetry = experimental_telemetry, runtimeContext = {}, onStart, experimental_onStart, onEnd, experimental_onEnd, _internal: { generateCallId = originalGenerateCallId4 } = {} }) {
+async function embed({ model: modelArg, value, providerOptions, maxRetries: maxRetriesArg, abortSignal, headers, experimental_telemetry, telemetry = experimental_telemetry, onStart, experimental_onStart, onEnd, experimental_onEnd, _internal: { generateCallId = originalGenerateCallId4 } = {} }) {
     var _a25;
     const model = resolveEmbeddingModel(modelArg);
     const { maxRetries, retry } = prepareRetries({
@@ -12983,16 +12575,15 @@ async function embed({ model: modelArg, value, providerOptions, maxRetries: maxR
     });
     const resolvedOnStart = onStart != null ? onStart : experimental_onStart;
     const resolvedOnEnd = onEnd != null ? onEnd : experimental_onEnd;
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const callId = generateCallId();
-    const telemetryDispatcher = createRestrictedTelemetryDispatcher2({
+    const telemetryDispatcher = createTelemetryDispatcher({
         telemetry
     });
     const runInTracingChannelSpan = (_a25 = telemetryDispatcher.runInTracingChannelSpan) != null ? _a25 : async ({ execute })=>await execute();
     const startEvent = {
         callId,
         operationId: "ai.embed",
-        runtimeContext,
         provider: model.provider,
         modelId: model.modelId,
         value,
@@ -13061,7 +12652,7 @@ async function embed({ model: modelArg, value, providerOptions, maxRetries: maxR
                         ]
                     });
                     if (embedding2 == null) {
-                        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidResponseDataError"]({
+                        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidResponseDataError"]({
                             data: modelResponse.embeddings,
                             message: "No embedding generated."
                         });
@@ -13083,7 +12674,6 @@ async function embed({ model: modelArg, value, providerOptions, maxRetries: maxR
                     event: {
                         callId,
                         operationId: "ai.embed",
-                        runtimeContext,
                         provider: model.provider,
                         modelId: model.modelId,
                         value,
@@ -13130,16 +12720,12 @@ var DefaultEmbedResult = class {
 ;
 ;
 function getEmbeddingModelMaxInputBytesPerCall(model) {
-    return model[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["EXPERIMENTAL_EMBEDDING_MODEL_MAX_INPUT_BYTES_PER_CALL"]];
+    return model[__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["EXPERIMENTAL_EMBEDDING_MODEL_MAX_INPUT_BYTES_PER_CALL"]];
 }
 // src/util/split-array.ts
 function splitArray(array3, chunkSize) {
     if (chunkSize <= 0) {
-        throw new InvalidArgumentError({
-            parameter: "chunkSize",
-            value: chunkSize,
-            message: "chunkSize must be greater than 0"
-        });
+        throw new Error("chunkSize must be greater than 0");
     }
     const result = [];
     for(let i = 0; i < array3.length; i += chunkSize){
@@ -13148,11 +12734,11 @@ function splitArray(array3, chunkSize) {
     return result;
 }
 // src/embed/embed-many.ts
-var originalGenerateCallId5 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateCallId5 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "call",
     size: 24
 });
-async function embedMany({ model: modelArg, values, maxParallelCalls = Infinity, maxRetries: maxRetriesArg, abortSignal, headers, providerOptions, experimental_telemetry, telemetry = experimental_telemetry, runtimeContext = {}, onStart, experimental_onStart, onEnd, experimental_onEnd, _internal: { generateCallId = originalGenerateCallId5 } = {} }) {
+async function embedMany({ model: modelArg, values, maxParallelCalls = Infinity, maxRetries: maxRetriesArg, abortSignal, headers, providerOptions, experimental_telemetry, telemetry = experimental_telemetry, onStart, experimental_onStart, onEnd, experimental_onEnd, _internal: { generateCallId = originalGenerateCallId5 } = {} }) {
     var _a25;
     const model = resolveEmbeddingModel(modelArg);
     const { maxRetries, retry } = prepareRetries({
@@ -13161,16 +12747,15 @@ async function embedMany({ model: modelArg, values, maxParallelCalls = Infinity,
     });
     const resolvedOnStart = onStart != null ? onStart : experimental_onStart;
     const resolvedOnEnd = onEnd != null ? onEnd : experimental_onEnd;
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const callId = generateCallId();
-    const telemetryDispatcher = createRestrictedTelemetryDispatcher2({
+    const telemetryDispatcher = createTelemetryDispatcher({
         telemetry
     });
     const runInTracingChannelSpan = (_a25 = telemetryDispatcher.runInTracingChannelSpan) != null ? _a25 : async ({ execute })=>await execute();
     const startEvent = {
         callId,
         operationId: "ai.embedMany",
-        runtimeContext,
         provider: model.provider,
         modelId: model.modelId,
         value: values,
@@ -13261,7 +12846,6 @@ async function embedMany({ model: modelArg, values, maxParallelCalls = Infinity,
                         event: {
                             callId,
                             operationId: "ai.embedMany",
-                            runtimeContext,
                             provider: model.provider,
                             modelId: model.modelId,
                             value: values,
@@ -13387,7 +12971,6 @@ async function embedMany({ model: modelArg, values, maxParallelCalls = Infinity,
                     event: {
                         callId,
                         operationId: "ai.embedMany",
-                        runtimeContext,
                         provider: model.provider,
                         modelId: model.modelId,
                         value: values,
@@ -13426,7 +13009,7 @@ async function embedMany({ model: modelArg, values, maxParallelCalls = Infinity,
 }
 function validateEmbeddingCount({ embeddings, values }) {
     if (embeddings.length !== values.length) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidResponseDataError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidResponseDataError"]({
             data: embeddings,
             message: `Expected ${values.length} embeddings, but received ${embeddings.length}.`
         });
@@ -13469,6 +13052,294 @@ var DefaultEmbedManyResult = class {
         this.responses = options.responses;
     }
 };
+;
+;
+;
+function convertDataContentToBase64String(content) {
+    if (typeof content === "string") {
+        return content;
+    }
+    if (content instanceof ArrayBuffer) {
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(new Uint8Array(content));
+    }
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertUint8ArrayToBase64"])(content);
+}
+function convertDataContentToUint8Array(content) {
+    if (content instanceof Uint8Array) {
+        return content;
+    }
+    if (typeof content === "string") {
+        try {
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(content);
+        } catch (error) {
+            throw new InvalidDataContentError({
+                message: "Invalid data content. Content string is not a base64-encoded media.",
+                content,
+                cause: error
+            });
+        }
+    }
+    if (content instanceof ArrayBuffer) {
+        return new Uint8Array(content);
+    }
+    throw new InvalidDataContentError({
+        content
+    });
+}
+// src/generate-image/generate-image.ts
+var gatewayCostMetadataKeys = [
+    "cost",
+    "gatewayCost",
+    "inferenceCost",
+    "inputInferenceCost",
+    "marketCost",
+    "outputInferenceCost",
+    "surchargeCost"
+];
+var RetryableNoImageResultError = class extends Error {
+    constructor(){
+        super("No image generated.");
+        this.name = "RetryableNoImageResultError";
+    }
+};
+async function generateImage({ model: modelArg, prompt: promptArg, n = 1, maxImagesPerCall, size, aspectRatio, seed, providerOptions, maxRetries: maxRetriesArg, abortSignal, headers }) {
+    var _a25, _b25;
+    const model = resolveImageModel(modelArg);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const { retry } = prepareRetries({
+        maxRetries: maxRetriesArg,
+        abortSignal,
+        additionalRetryableError: (error)=>error instanceof RetryableNoImageResultError
+    });
+    const maxImagesPerCallWithDefault = (_a25 = maxImagesPerCall != null ? maxImagesPerCall : await invokeModelMaxImagesPerCall(model)) != null ? _a25 : 1;
+    const callCount = Math.ceil(n / maxImagesPerCallWithDefault);
+    const callImageCounts = Array.from({
+        length: callCount
+    }, (_, i)=>{
+        if (i < callCount - 1) {
+            return maxImagesPerCallWithDefault;
+        }
+        const remainder = n % maxImagesPerCallWithDefault;
+        return remainder === 0 ? maxImagesPerCallWithDefault : remainder;
+    });
+    const resultGroups = await Promise.all(callImageCounts.map(async (callImageCount)=>{
+        const callResults = [];
+        try {
+            await retry(async ()=>{
+                const { prompt, files, mask } = normalizePrompt(promptArg);
+                const result = await model.doGenerate({
+                    prompt,
+                    files,
+                    mask,
+                    n: callImageCount,
+                    abortSignal,
+                    headers: headersWithUserAgent,
+                    size,
+                    aspectRatio,
+                    seed,
+                    providerOptions: providerOptions != null ? providerOptions : {}
+                });
+                callResults.push(result);
+                if (result.images.length === 0 && result.isRetryable !== false) {
+                    throw new RetryableNoImageResultError();
+                }
+                return result;
+            });
+            return callResults;
+        } catch (error) {
+            const noImageResultError = error instanceof RetryableNoImageResultError ? error : RetryError.isInstance(error) && error.lastError instanceof RetryableNoImageResultError ? error.lastError : void 0;
+            if (noImageResultError != null) {
+                return callResults;
+            }
+            throw error;
+        }
+    }));
+    const results = resultGroups.flat();
+    const images = [];
+    const calls = [];
+    const warnings = [];
+    const responses = [];
+    const providerMetadata = {};
+    let totalUsage = {
+        inputTokens: void 0,
+        outputTokens: void 0,
+        totalTokens: void 0
+    };
+    for (const result of results){
+        const callImages = result.images.map((image, index)=>{
+            var _a26;
+            return new DefaultGeneratedFile({
+                data: image,
+                mediaType: (_a26 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+                    data: image,
+                    topLevelType: "image"
+                })) != null ? _a26 : "image/png",
+                providerMetadata: getImageProviderMetadata(result.providerMetadata, index)
+            });
+        });
+        images.push(...callImages);
+        calls.push({
+            images: callImages,
+            providerMetadata: result.providerMetadata,
+            response: result.response,
+            warnings: result.warnings,
+            usage: result.usage
+        });
+        warnings.push(...result.warnings);
+        if (result.usage != null) {
+            totalUsage = addImageModelUsage(totalUsage, result.usage);
+        }
+        if (result.providerMetadata) {
+            for (const [providerName, metadata] of Object.entries(result.providerMetadata)){
+                if (providerName === "gateway") {
+                    const currentEntry = providerMetadata[providerName];
+                    if (currentEntry != null && typeof currentEntry === "object") {
+                        const currentGatewayMetadata = currentEntry;
+                        const newGatewayMetadata = metadata;
+                        providerMetadata[providerName] = {
+                            ...currentEntry,
+                            ...metadata,
+                            ...Object.fromEntries(gatewayCostMetadataKeys.flatMap((key)=>{
+                                const total = addDecimalStrings(currentGatewayMetadata[key], newGatewayMetadata[key]);
+                                return total == null ? [] : [
+                                    [
+                                        key,
+                                        total
+                                    ]
+                                ];
+                            }))
+                        };
+                    } else {
+                        providerMetadata[providerName] = {
+                            ...metadata
+                        };
+                    }
+                    const imagesValue = providerMetadata[providerName].images;
+                    if (Array.isArray(imagesValue) && imagesValue.length === 0) {
+                        delete providerMetadata[providerName].images;
+                    }
+                } else {
+                    (_b25 = providerMetadata[providerName]) != null ? _b25 : providerMetadata[providerName] = {
+                        images: []
+                    };
+                    providerMetadata[providerName].images.push(...metadata.images);
+                }
+            }
+        }
+        responses.push(result.response);
+    }
+    logWarnings({
+        warnings,
+        provider: model.provider,
+        model: model.modelId
+    });
+    if (!images.length) {
+        throw new NoImageGeneratedError({
+            calls,
+            responses
+        });
+    }
+    return new DefaultGenerateImageResult({
+        images,
+        calls,
+        warnings,
+        responses,
+        providerMetadata,
+        usage: totalUsage
+    });
+}
+var DefaultGenerateImageResult = class {
+    constructor(options){
+        this.images = options.images;
+        this.calls = options.calls;
+        this.warnings = options.warnings;
+        this.responses = options.responses;
+        this.providerMetadata = options.providerMetadata;
+        this.usage = options.usage;
+    }
+    get image() {
+        return this.images[0];
+    }
+};
+function getImageProviderMetadata(providerMetadata, imageIndex) {
+    var _a25;
+    if (providerMetadata == null) {
+        return void 0;
+    }
+    let imageMetadata;
+    for (const [providerName, metadata] of Object.entries(providerMetadata)){
+        const value = (_a25 = metadata.images) == null ? void 0 : _a25[imageIndex];
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) && !Array.isArray(value)) {
+            (imageMetadata != null ? imageMetadata : imageMetadata = {})[providerName] = value;
+        }
+    }
+    return imageMetadata;
+}
+async function invokeModelMaxImagesPerCall(model) {
+    const isFunction = model.maxImagesPerCall instanceof Function;
+    if (!isFunction) {
+        return model.maxImagesPerCall;
+    }
+    return model.maxImagesPerCall({
+        modelId: model.modelId
+    });
+}
+function addDecimalStrings(value1, value2) {
+    if (typeof value1 !== "string" || typeof value2 !== "string" || !/^\d+(?:\.\d+)?$/.test(value1) || !/^\d+(?:\.\d+)?$/.test(value2)) {
+        return void 0;
+    }
+    const [integer1, fraction1 = ""] = value1.split(".");
+    const [integer2, fraction2 = ""] = value2.split(".");
+    const precision = Math.max(fraction1.length, fraction2.length);
+    const sum = BigInt(integer1 + fraction1.padEnd(precision, "0")) + BigInt(integer2 + fraction2.padEnd(precision, "0"));
+    const sumString = sum.toString().padStart(precision + 1, "0");
+    return precision === 0 ? sumString : `${sumString.slice(0, -precision)}.${sumString.slice(-precision)}`.replace(/\.?0+$/, "");
+}
+function normalizePrompt(prompt) {
+    if (typeof prompt === "string") {
+        return {
+            prompt,
+            files: void 0,
+            mask: void 0
+        };
+    }
+    return {
+        prompt: prompt.text,
+        files: prompt.images.map(toImageModelV4File),
+        mask: prompt.mask ? toImageModelV4File(prompt.mask) : void 0
+    };
+}
+function toImageModelV4File(dataContent) {
+    if (typeof dataContent === "string" && dataContent.startsWith("http")) {
+        return {
+            type: "url",
+            url: dataContent
+        };
+    }
+    if (typeof dataContent === "string" && dataContent.startsWith("data:")) {
+        const { mediaType: dataUrlMediaType, base64Content } = splitDataUrl(dataContent);
+        if (base64Content != null) {
+            const uint8Data2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(base64Content);
+            return {
+                type: "file",
+                data: uint8Data2,
+                mediaType: dataUrlMediaType || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+                    data: uint8Data2,
+                    topLevelType: "image"
+                }) || "image/png"
+            };
+        }
+    }
+    const uint8Data = convertDataContentToUint8Array(dataContent);
+    return {
+        type: "file",
+        data: uint8Data,
+        mediaType: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+            data: uint8Data,
+            topLevelType: "image"
+        }) || "image/png"
+    };
+}
 ;
 // src/generate-text/extract-reasoning-content.ts
 function extractReasoningContent(content) {
@@ -13513,7 +13384,7 @@ var noSchemaOutputStrategy = {
         };
     },
     createElementStream () {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
             functionality: "element streams in no-schema mode"
         });
     }
@@ -13532,13 +13403,13 @@ var objectOutputStrategy = (schema)=>({
             };
         },
         async validateFinalResult (value) {
-            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                 value,
                 schema
             });
         },
         createElementStream () {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
                 functionality: "element streams in object mode"
             });
         }
@@ -13574,10 +13445,10 @@ var arrayOutputStrategy = (schema)=>{
         },
         async validatePartialResult ({ value, latestObject, isFirstDelta, isFinalDelta }) {
             var _a25;
-            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONArray"])(value.elements)) {
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONArray"])(value.elements)) {
                 return {
                     success: false,
-                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value,
                         cause: "value must be an object that contains an array of elements"
                     })
@@ -13587,7 +13458,7 @@ var arrayOutputStrategy = (schema)=>{
             const resultArray = [];
             for(let i = 0; i < inputArray.length; i++){
                 const element = inputArray[i];
-                const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+                const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                     value: element,
                     schema
                 });
@@ -13620,10 +13491,10 @@ var arrayOutputStrategy = (schema)=>{
             };
         },
         async validateFinalResult (value) {
-            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONArray"])(value.elements)) {
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONArray"])(value.elements)) {
                 return {
                     success: false,
-                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value,
                         cause: "value must be an object that contains an array of elements"
                     })
@@ -13632,7 +13503,7 @@ var arrayOutputStrategy = (schema)=>{
             const inputArray = value.elements;
             const resultArray = [];
             for (const element of inputArray){
-                const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
+                const result = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeValidateTypes"])({
                     value: element,
                     schema
                 });
@@ -13695,10 +13566,10 @@ var enumOutputStrategy = (enumValues)=>{
                 additionalProperties: false
             }),
         async validateFinalResult (value) {
-            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || typeof value.result !== "string") {
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || typeof value.result !== "string") {
                 return {
                     success: false,
-                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value,
                         cause: 'value must be an object that contains a string in the "result" property.'
                     })
@@ -13710,17 +13581,17 @@ var enumOutputStrategy = (enumValues)=>{
                 value: result
             } : {
                 success: false,
-                error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                     value,
                     cause: "value must be a string in the enum"
                 })
             };
         },
         async validatePartialResult ({ value, textDelta }) {
-            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || typeof value.result !== "string") {
+            if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isJSONObject"])(value) || typeof value.result !== "string") {
                 return {
                     success: false,
-                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value,
                         cause: 'value must be an object that contains a string in the "result" property.'
                     })
@@ -13731,7 +13602,7 @@ var enumOutputStrategy = (enumValues)=>{
             if (value.result.length === 0 || possibleEnumValues.length === 0) {
                 return {
                     success: false,
-                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
+                    error: new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"]({
                         value,
                         cause: "value must be a string in the enum"
                     })
@@ -13746,7 +13617,7 @@ var enumOutputStrategy = (enumValues)=>{
             };
         },
         createElementStream () {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
                 functionality: "element streams in enum mode"
             });
         }
@@ -13755,9 +13626,9 @@ var enumOutputStrategy = (enumValues)=>{
 function getOutputStrategy({ output, schema, enumValues }) {
     switch(output){
         case "object":
-            return objectOutputStrategy((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(schema));
+            return objectOutputStrategy((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(schema));
         case "array":
-            return arrayOutputStrategy((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(schema));
+            return arrayOutputStrategy((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(schema));
         case "enum":
             return enumOutputStrategy(enumValues);
         case "no-schema":
@@ -13772,7 +13643,7 @@ function getOutputStrategy({ output, schema, enumValues }) {
 ;
 ;
 async function parseAndValidateObjectResult(result, outputStrategy, context) {
-    const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+    const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
         text: result
     });
     if (!parseResult.success) {
@@ -13806,7 +13677,7 @@ async function parseAndValidateObjectResultWithRepair(result, outputStrategy, re
     try {
         return await parseAndValidateObjectResult(result, outputStrategy, context);
     } catch (error) {
-        if (repairText != null && NoObjectGeneratedError.isInstance(error) && (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["JSONParseError"].isInstance(error.cause) || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"].isInstance(error.cause))) {
+        if (repairText != null && NoObjectGeneratedError.isInstance(error) && (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["JSONParseError"].isInstance(error.cause) || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TypeValidationError"].isInstance(error.cause))) {
             const repairedText = await repairText({
                 text: result,
                 error: error.cause
@@ -13931,7 +13802,7 @@ function validateObjectGenerationInput({ output, schema, schemaName, schemaDescr
     }
 }
 // src/generate-object/generate-object.ts
-var originalGenerateId4 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateId4 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "aiobj",
     size: 24
 });
@@ -13958,7 +13829,7 @@ async function generateObject(options) {
         enumValues
     });
     const callSettings = prepareLanguageModelCallOptions(settings);
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const telemetryDispatcher = createTelemetryDispatcher({
         telemetry
     });
@@ -14193,20 +14064,12 @@ function getTextFromDataUrl(dataUrl) {
     const [header, base64Content] = dataUrl.split(",");
     const mediaType = header.split(";")[0].split(":")[1];
     if (mediaType == null || base64Content == null) {
-        throw new InvalidArgumentError({
-            parameter: "dataUrl",
-            value: dataUrl,
-            message: "Invalid data URL format"
-        });
+        throw new Error("Invalid data URL format");
     }
     try {
         return atob2(base64Content);
     } catch (e) {
-        throw new InvalidArgumentError({
-            parameter: "dataUrl",
-            value: dataUrl,
-            message: "Error decoding data URL"
-        });
+        throw new Error(`Error decoding data URL`);
     }
 }
 // src/util/serial-job-executor.ts
@@ -14243,7 +14106,7 @@ var SerialJobExecutor = class {
 ;
 function simulateReadableStream({ chunks, initialDelayInMs = 0, chunkDelayInMs = 0, _internal }) {
     var _a25;
-    const delay = (_a25 = _internal == null ? void 0 : _internal.delay) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["delay"];
+    const delay = (_a25 = _internal == null ? void 0 : _internal.delay) != null ? _a25 : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["delay"];
     let index = 0;
     return new ReadableStream({
         async pull (controller) {
@@ -14257,7 +14120,7 @@ function simulateReadableStream({ chunks, initialDelayInMs = 0, chunkDelayInMs =
     });
 }
 // src/generate-object/stream-object.ts
-var originalGenerateId5 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateId5 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "aiobj",
     size: 24
 });
@@ -14314,13 +14177,13 @@ function streamObject(options) {
 }
 var DefaultStreamObjectResult = class {
     constructor({ model: modelArg, headers, telemetry, settings, maxRetries: maxRetriesArg, abortSignal, outputStrategy, instructions, system, prompt, messages, allowSystemInMessages, schemaName, schemaDescription, providerOptions, repairText, onStart, onStepStart, onStepFinish, onError, onFinish, download: download2, generateId: generateId4, currentDate, now: now2 }){
-        this._object = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._usage = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._providerMetadata = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._warnings = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._request = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._response = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-        this._finishReason = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._object = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._usage = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._providerMetadata = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._warnings = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._request = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._response = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+        this._finishReason = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
         const model = resolveLanguageModel(modelArg);
         const { maxRetries, retry } = prepareRetries({
             maxRetries: maxRetriesArg,
@@ -14813,7 +14676,7 @@ async function generateSpeech({ model, text: text2, voice, outputFormat, instruc
     if (!resolvedModel) {
         throw new Error("Model could not be resolved");
     }
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const { retry } = prepareRetries({
         maxRetries: maxRetriesArg,
         abortSignal
@@ -14844,7 +14707,7 @@ async function generateSpeech({ model, text: text2, voice, outputFormat, instruc
     return new DefaultSpeechResult({
         audio: new DefaultGeneratedAudioFile({
             data: result.audio,
-            mediaType: (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+            mediaType: (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
                 data: result.audio,
                 topLevelType: "audio"
             })) != null ? _a25 : "audio/mp3"
@@ -14974,7 +14837,7 @@ var CHUNKING_REGEXPS = {
 function isDocumentHidden() {
     return typeof document !== "undefined" && document.visibilityState === "hidden";
 }
-function smoothStream({ delayInMs = 10, chunking = "word", _internal: { delay = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["delay"] } = {} } = {}) {
+function smoothStream({ delayInMs = 10, chunking = "word", _internal: { delay = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["delay"] } = {} } = {}) {
     let detectChunk;
     if (chunking != null && typeof chunking === "object" && "segment" in chunking && typeof chunking.segment === "function") {
         const segmenter = chunking;
@@ -15001,7 +14864,7 @@ function smoothStream({ delayInMs = 10, chunking = "word", _internal: { delay = 
     } else {
         const chunkingRegex = typeof chunking === "string" ? CHUNKING_REGEXPS[chunking] : chunking instanceof RegExp ? chunking : void 0;
         if (chunkingRegex == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidArgumentError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidArgumentError"]({
                 argument: "chunking",
                 message: `Chunking must be "word", "line", a RegExp, an Intl.Segmenter, or a ChunkDetector function. Received: ${chunking}`
             });
@@ -15095,7 +14958,7 @@ async function fingerprintTools(tools) {
         const tool2 = tools[name25];
         const digest = await hashCanonical({
             description: tagDescription(tool2.description),
-            inputSchema: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema).jsonSchema,
+            inputSchema: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema).jsonSchema,
             title: tool2.title
         });
         return [
@@ -15132,7 +14995,7 @@ var defaultDownload = createDownload();
 async function experimental_generateVideo({ model: modelArg, prompt: promptArg, n = 1, maxVideosPerCall, aspectRatio, resolution, duration, fps, seed, frameImages, inputReferences, generateAudio, providerOptions, maxRetries: maxRetriesArg, abortSignal, headers, download: downloadFn = defaultDownload, poll, webhook }) {
     var _a25;
     const model = resolveVideoModel(modelArg);
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const { retry } = prepareRetries({
         maxRetries: maxRetriesArg,
         abortSignal
@@ -15208,7 +15071,7 @@ async function experimental_generateVideo({ model: modelArg, prompt: promptArg, 
                             abortSignal
                         });
                         const isUsableMediaType = (type)=>!!type && type !== "application/octet-stream";
-                        const mediaType = isUsableMediaType(videoData.mediaType) && videoData.mediaType || isUsableMediaType(downloadedMediaType) && downloadedMediaType || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+                        const mediaType = isUsableMediaType(videoData.mediaType) && videoData.mediaType || isUsableMediaType(downloadedMediaType) && downloadedMediaType || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
                             data,
                             topLevelType: "video"
                         }) || "video/mp4";
@@ -15228,7 +15091,7 @@ async function experimental_generateVideo({ model: modelArg, prompt: promptArg, 
                     }
                 case "binary":
                     {
-                        const mediaType = videoData.mediaType || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+                        const mediaType = videoData.mediaType || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
                             data: videoData.data,
                             topLevelType: "video"
                         }) || "video/mp4";
@@ -15298,7 +15161,7 @@ async function executeStartStatusFlow({ model, callOptions, poll: pollConfig, we
         headers: {
             ...callOptions.headers,
             ...callerIdempotencyKey ? {} : {
-                "idempotency-key": `aisdk_vid_${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"])()}`
+                "idempotency-key": `aisdk_vid_${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"])()}`
             }
         },
         webhookUrl
@@ -15313,7 +15176,7 @@ async function executeStartStatusFlow({ model, callOptions, poll: pollConfig, we
     };
     const intervalMs = (_b25 = pollConfig == null ? void 0 : pollConfig.intervalMs) != null ? _b25 : 5e3;
     const timeoutMs = (_c = pollConfig == null ? void 0 : pollConfig.timeoutMs) != null ? _c : 6e5;
-    const delay = (_d = pollConfig == null ? void 0 : pollConfig.delay) != null ? _d : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["delay"];
+    const delay = (_d = pollConfig == null ? void 0 : pollConfig.delay) != null ? _d : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["delay"];
     const startTime = Date.now();
     if (webhookReceived != null) {
         await waitForWebhook({
@@ -15453,10 +15316,10 @@ function normalizeVideoCallInputs({ promptArg, frameImages, inputReferences }) {
     };
 }
 function detectFileMediaType(data, restrictToImages) {
-    const detected = restrictToImages ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+    const detected = restrictToImages ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
         data,
         topLevelType: "image"
-    }) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+    }) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
         data
     });
     return detected != null ? detected : "image/png";
@@ -15471,14 +15334,14 @@ function normalizeImageData(dataContent, { restrictToImages = true } = {}) {
         }
         if (dataContent.startsWith("data:")) {
             const { mediaType, base64Content } = splitDataUrl(dataContent);
-            const data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(base64Content != null ? base64Content : "");
+            const data = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(base64Content != null ? base64Content : "");
             return {
                 type: "file",
                 mediaType: mediaType != null ? mediaType : detectFileMediaType(data, restrictToImages),
                 data
             };
         }
-        const bytes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(dataContent);
+        const bytes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(dataContent);
         return {
             type: "file",
             mediaType: detectFileMediaType(bytes, restrictToImages),
@@ -15562,9 +15425,9 @@ async function experimental_startVideo({ model: modelArg, prompt: promptArg, n =
         generateAudio,
         providerOptions: providerOptions != null ? providerOptions : {},
         headers: {
-            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`),
             ...callerIdempotencyKey ? {} : {
-                "idempotency-key": `aisdk_vid_${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"])()}`
+                "idempotency-key": `aisdk_vid_${(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"])()}`
             }
         },
         abortSignal,
@@ -15593,7 +15456,7 @@ async function experimental_getVideoStatus(modelArg, { operation, headers, abort
     });
     return retry(()=>model.doStatus({
             operation,
-            headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`),
+            headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`),
             abortSignal
         }));
 }
@@ -15613,7 +15476,7 @@ function defaultInstructionsMiddleware({ instructions }) {
             role: "system",
             content: instructions
         }
-    ] : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(instructions).map((message)=>({
+    ] : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(instructions).map((message)=>({
             role: "system",
             content: message.content,
             providerOptions: message.providerOptions
@@ -16056,7 +15919,7 @@ ${examplesSection}` : examplesSection;
 var wrapLanguageModel = ({ model: inputModel, middleware: middlewareArg, modelId, providerId })=>{
     const model = asLanguageModelV4(inputModel);
     return [
-        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(middlewareArg)
+        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(middlewareArg)
     ].reverse().reduce((wrappedModel, middleware)=>{
         return doWrap({
             model: wrappedModel,
@@ -16120,7 +15983,7 @@ var doWrap = ({ model, middleware: { transformParams, wrapGenerate, wrapStream, 
 var wrapEmbeddingModel = ({ model: inputModel, middleware: middlewareArg, modelId, providerId })=>{
     const model = asEmbeddingModelV4(inputModel);
     return [
-        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(middlewareArg)
+        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(middlewareArg)
     ].reverse().reduce((wrappedModel, middleware)=>{
         return doWrap2({
             model: wrappedModel,
@@ -16149,7 +16012,7 @@ var doWrap2 = ({ model, middleware: { transformParams, wrapEmbed, overrideProvid
         maxEmbeddingsPerCall: (_c = overrideMaxEmbeddingsPerCall == null ? void 0 : overrideMaxEmbeddingsPerCall({
             model
         })) != null ? _c : model.maxEmbeddingsPerCall,
-        [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["EXPERIMENTAL_EMBEDDING_MODEL_MAX_INPUT_BYTES_PER_CALL"]]: getEmbeddingModelMaxInputBytesPerCall(model),
+        [__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["EXPERIMENTAL_EMBEDDING_MODEL_MAX_INPUT_BYTES_PER_CALL"]]: getEmbeddingModelMaxInputBytesPerCall(model),
         supportsParallelCalls: (_d = overrideSupportsParallelCalls == null ? void 0 : overrideSupportsParallelCalls({
             model
         })) != null ? _d : model.supportsParallelCalls,
@@ -16170,7 +16033,7 @@ var doWrap2 = ({ model, middleware: { transformParams, wrapEmbed, overrideProvid
 var wrapImageModel = ({ model: inputModel, middleware: middlewareArg, modelId, providerId })=>{
     const model = asImageModelV4(inputModel);
     return [
-        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(middlewareArg)
+        ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asArray"])(middlewareArg)
     ].reverse().reduce((wrappedModel, middleware)=>{
         return doWrap3({
             model: wrappedModel,
@@ -16304,7 +16167,7 @@ async function getRealtimeToolDefinitions({ tools, toolsContext = {} }) {
                         type: "function",
                         name: name25,
                         description,
-                        parameters: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema).jsonSchema
+                        parameters: await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["asSchema"])(tool2.inputSchema).jsonSchema
                     });
                     break;
                 }
@@ -16519,7 +16382,7 @@ var BrowserRealtimeTransport = class {
         } else {
             text2 = new TextDecoder().decode(messageEvent.data);
         }
-        const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+        const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
             text: text2
         });
         if (!parseResult.success) return;
@@ -16685,7 +16548,7 @@ var RealtimeEventReducer = class {
                 {
                     this.toolArgAccumulators.delete(event.callId);
                     this.toolCallIdToName.set(event.callId, event.name);
-                    const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
+                    const parseResult = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["safeParseJSON"])({
                         text: event.arguments
                     });
                     const parsedInput = parseResult.success ? parseResult.value : {};
@@ -17229,7 +17092,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (fallbackProvider) {
                 return fallbackProvider.languageModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "languageModel"
             });
@@ -17241,7 +17104,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (fallbackProvider) {
                 return fallbackProvider.embeddingModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "embeddingModel"
             });
@@ -17253,7 +17116,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (fallbackProvider == null ? void 0 : fallbackProvider.imageModel) {
                 return fallbackProvider.imageModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "imageModel"
             });
@@ -17268,7 +17131,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (fallbackProvider == null ? void 0 : fallbackProvider.transcriptionModel) {
                 return fallbackProvider.transcriptionModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "transcriptionModel"
             });
@@ -17283,7 +17146,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (fallbackProvider == null ? void 0 : fallbackProvider.speechModel) {
                 return fallbackProvider.speechModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "speechModel"
             });
@@ -17295,7 +17158,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (fallbackProvider == null ? void 0 : fallbackProvider.rerankingModel) {
                 return fallbackProvider.rerankingModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "rerankingModel"
             });
@@ -17308,7 +17171,7 @@ function customProvider({ languageModels, embeddingModels, imageModels, transcri
             if (videoModel) {
                 return videoModel(modelId);
             }
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId,
                 modelType: "videoModel"
             });
@@ -17333,7 +17196,7 @@ var name24 = "AI_NoSuchProviderError";
 var marker24 = `vercel.ai.error.${name24}`;
 var symbol24 = Symbol.for(marker24);
 var _a24, _b24;
-var NoSuchProviderError = class extends (_b24 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"], _a24 = symbol24, _b24) {
+var NoSuchProviderError = class extends (_b24 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"], _a24 = symbol24, _b24) {
     constructor({ modelId, modelType, providerId, availableProviders, message = `No such provider: ${providerId} (available providers: ${availableProviders.join()})` }){
         super({
             errorName: name24,
@@ -17346,7 +17209,7 @@ var NoSuchProviderError = class extends (_b24 = __TURBOPACK__imported__module__$
         this.availableProviders = availableProviders;
     }
     static isInstance(error) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker24);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AISDKError"].hasMarker(error, marker24);
     }
 };
 ;
@@ -17396,7 +17259,7 @@ var DefaultProviderRegistry = class {
     splitId(id, modelType) {
         const index = id.indexOf(this.separator);
         if (index === -1) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType,
                 message: `Invalid ${modelType} id for registry: ${id} (must be in the format "providerId${this.separator}modelId")`
@@ -17412,7 +17275,7 @@ var DefaultProviderRegistry = class {
         const [providerId, modelId] = this.splitId(id, "languageModel");
         let model = (_b25 = (_a25 = this.getProvider(providerId, "languageModel")).languageModel) == null ? void 0 : _b25.call(_a25, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "languageModel"
             });
@@ -17431,7 +17294,7 @@ var DefaultProviderRegistry = class {
         const provider = this.getProvider(providerId, "embeddingModel");
         const model = (_a25 = provider.embeddingModel) == null ? void 0 : _a25.call(provider, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "embeddingModel"
             });
@@ -17444,7 +17307,7 @@ var DefaultProviderRegistry = class {
         const provider = this.getProvider(providerId, "imageModel");
         let model = (_a25 = provider.imageModel) == null ? void 0 : _a25.call(provider, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "imageModel"
             });
@@ -17463,7 +17326,7 @@ var DefaultProviderRegistry = class {
         const provider = this.getProvider(providerId, "transcriptionModel");
         const model = (_a25 = provider.transcriptionModel) == null ? void 0 : _a25.call(provider, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "transcriptionModel"
             });
@@ -17476,7 +17339,7 @@ var DefaultProviderRegistry = class {
         const provider = this.getProvider(providerId, "speechModel");
         const model = (_a25 = provider.speechModel) == null ? void 0 : _a25.call(provider, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "speechModel"
             });
@@ -17489,7 +17352,7 @@ var DefaultProviderRegistry = class {
         const provider = this.getProvider(providerId, "rerankingModel");
         const model = (_a25 = provider.rerankingModel) == null ? void 0 : _a25.call(provider, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "rerankingModel"
             });
@@ -17502,7 +17365,7 @@ var DefaultProviderRegistry = class {
         const provider = this.getProvider(providerId, "videoModel");
         const model = (_a25 = provider.videoModel) == null ? void 0 : _a25.call(provider, modelId);
         if (model == null) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
+            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NoSuchModelError"]({
                 modelId: id,
                 modelType: "videoModel"
             });
@@ -17529,48 +17392,17 @@ var DefaultProviderRegistry = class {
     }
 };
 ;
-;
-// src/rerank/restricted-telemetry-dispatcher.ts
-function createRestrictedTelemetryDispatcher3({ telemetry }) {
-    const dispatcher = createTelemetryDispatcher({
-        telemetry
-    });
-    return {
-        ...dispatcher,
-        onStart: (event)=>{
-            var _a25;
-            return (_a25 = dispatcher.onStart) == null ? void 0 : _a25.call(dispatcher, {
-                ...event,
-                runtimeContext: filterIncludedContext({
-                    context: event.runtimeContext,
-                    includeContext: telemetry == null ? void 0 : telemetry.includeRuntimeContext
-                })
-            });
-        },
-        onEnd: (event)=>{
-            var _a25;
-            return (_a25 = dispatcher.onEnd) == null ? void 0 : _a25.call(dispatcher, {
-                ...event,
-                runtimeContext: filterIncludedContext({
-                    context: event.runtimeContext,
-                    includeContext: telemetry == null ? void 0 : telemetry.includeRuntimeContext
-                })
-            });
-        }
-    };
-}
-// src/rerank/rerank.ts
-var originalGenerateCallId6 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
+var originalGenerateCallId6 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createIdGenerator"])({
     prefix: "call",
     size: 24
 });
-async function rerank({ model: modelArg, documents, query, topN, maxRetries: maxRetriesArg, abortSignal, headers, providerOptions, experimental_telemetry, telemetry = experimental_telemetry, runtimeContext = {}, onStart, experimental_onStart, onEnd, experimental_onEnd, _internal: { generateCallId = originalGenerateCallId6 } = {} }) {
+async function rerank({ model: modelArg, documents, query, topN, maxRetries: maxRetriesArg, abortSignal, headers, providerOptions, experimental_telemetry, telemetry = experimental_telemetry, onStart, experimental_onStart, onEnd, experimental_onEnd, _internal: { generateCallId = originalGenerateCallId6 } = {} }) {
     var _a25;
     const model = resolveRerankingModel(modelArg);
     const callId = generateCallId();
     const resolvedOnStart = onStart != null ? onStart : experimental_onStart;
     const resolvedOnEnd = onEnd != null ? onEnd : experimental_onEnd;
-    const telemetryDispatcher = createRestrictedTelemetryDispatcher3({
+    const telemetryDispatcher = createTelemetryDispatcher({
         telemetry
     });
     const runInTracingChannelSpan = (_a25 = telemetryDispatcher.runInTracingChannelSpan) != null ? _a25 : async ({ execute })=>await execute();
@@ -17579,7 +17411,6 @@ async function rerank({ model: modelArg, documents, query, topN, maxRetries: max
             event: {
                 callId,
                 operationId: "ai.rerank",
-                runtimeContext,
                 provider: model.provider,
                 modelId: model.modelId,
                 documents,
@@ -17598,7 +17429,6 @@ async function rerank({ model: modelArg, documents, query, topN, maxRetries: max
             event: {
                 callId,
                 operationId: "ai.rerank",
-                runtimeContext,
                 provider: model.provider,
                 modelId: model.modelId,
                 documents,
@@ -17640,7 +17470,6 @@ async function rerank({ model: modelArg, documents, query, topN, maxRetries: max
     const startEvent = {
         callId,
         operationId: "ai.rerank",
-        runtimeContext,
         provider: model.provider,
         modelId: model.modelId,
         documents,
@@ -17708,10 +17537,6 @@ async function rerank({ model: modelArg, documents, query, topN, maxRetries: max
                         warnings: modelResponse.warnings
                     };
                 });
-                validateRankingIndices({
-                    ranking,
-                    documents
-                });
                 logWarnings({
                     warnings: warnings != null ? warnings : [],
                     provider: model.provider,
@@ -17721,15 +17546,14 @@ async function rerank({ model: modelArg, documents, query, topN, maxRetries: max
                     event: {
                         callId,
                         operationId: "ai.rerank",
-                        runtimeContext,
                         provider: model.provider,
                         modelId: model.modelId,
                         documents,
                         query,
-                        ranking: ranking.map((ranking2)=>({
-                                originalIndex: ranking2.index,
-                                score: ranking2.relevanceScore,
-                                document: documents[ranking2.index]
+                        ranking: ranking.map((r)=>({
+                                originalIndex: r.index,
+                                score: r.relevanceScore,
+                                document: documents[r.index]
                             })),
                         warnings: warnings != null ? warnings : [],
                         providerMetadata,
@@ -17772,16 +17596,6 @@ async function rerank({ model: modelArg, documents, query, topN, maxRetries: max
         }
     });
 }
-function validateRankingIndices({ ranking, documents }) {
-    for (const { index } of ranking){
-        if (!Number.isInteger(index) || index < 0 || index >= documents.length) {
-            throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["InvalidResponseDataError"]({
-                data: ranking,
-                message: `Invalid ranking index ${index}. Expected an integer between 0 and ${documents.length - 1}.`
-            });
-        }
-    }
-}
 var DefaultRerankResult = class {
     constructor(options){
         this.originalDocuments = options.originalDocuments;
@@ -17804,7 +17618,7 @@ async function transcribe({ model, audio, providerOptions = {}, maxRetries: maxR
         maxRetries: maxRetriesArg,
         abortSignal
     });
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
     const audioData = audio instanceof URL ? (await downloadFn({
         url: audio,
         abortSignal
@@ -17816,7 +17630,7 @@ async function transcribe({ model, audio, providerOptions = {}, maxRetries: maxR
             abortSignal,
             headers: headersWithUserAgent,
             providerOptions,
-            mediaType: (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+            mediaType: (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
                 data: audioData,
                 topLevelType: "audio"
             })) != null ? _a25 : "audio/wav"
@@ -17868,19 +17682,19 @@ function streamTranscribe({ model, audio, inputAudioFormat, providerOptions = {}
     }
     const doStream = (_a25 = resolvedModel.doStream) == null ? void 0 : _a25.bind(resolvedModel);
     if (doStream == null) {
-        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
+        throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["UnsupportedFunctionalityError"]({
             functionality: "streaming transcription",
             message: `The ${resolvedModel.provider} model "${resolvedModel.modelId}" does not support streaming transcription.` + (typeof model === "string" ? " String model IDs resolve through the global provider (AI Gateway by default). If that provider does not support streaming transcription, pass a provider model instance instead (e.g. openai.transcription('gpt-realtime-whisper')) or upgrade @ai-sdk/gateway to a version with streaming transcription support." : "")
         });
     }
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
-    const textPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const segmentsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const languagePromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const durationInSecondsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const warningsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const responsesPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const providerMetadataPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const textPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const segmentsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const languagePromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const durationInSecondsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const warningsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const responsesPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const providerMetadataPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
     const rejectPendingPromises = (error)=>{
         for (const promise of [
             textPromise,
@@ -18059,14 +17873,14 @@ var experimental_transcribe = transcribe;
 function streamTranslate({ model, audio, inputAudioFormat, targetLanguage, sourceLanguage, outputAudioFormat, providerOptions = {}, abortSignal, headers, includeRawChunks, _internal: { currentDate = ()=>/* @__PURE__ */ new Date() } = {} }) {
     const resolvedModel = resolveSpeechTranslationModel(model);
     const doStream = resolvedModel.doStream.bind(resolvedModel);
-    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
-    const sourceTextPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const translationTextPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const durationInSecondsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const usagePromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const warningsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const responsePromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
-    const providerMetadataPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const headersWithUserAgent = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])(headers != null ? headers : {}, `ai/${VERSION}`);
+    const sourceTextPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const translationTextPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const durationInSecondsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const usagePromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const warningsPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const responsePromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
+    const providerMetadataPromise = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["DelayedPromise"]();
     const rejectPendingPromises = (error)=>{
         for (const promise of [
             sourceTextPromise,
@@ -18278,10 +18092,10 @@ async function callCompletionApi({ api, prompt, credentials, headers, body, stre
                 ...body
             }),
             credentials,
-            headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])({
+            headers: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["withUserAgentSuffix"])({
                 "Content-Type": "application/json",
                 ...headers
-            }, `ai-sdk/${VERSION}`, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getRuntimeEnvironmentUserAgent"])()),
+            }, `ai-sdk/${VERSION}`, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["getRuntimeEnvironmentUserAgent"])()),
             signal: abortController.signal
         }).catch((err)=>{
             throw err;
@@ -18308,7 +18122,7 @@ async function callCompletionApi({ api, prompt, credentials, headers, body, stre
             case "data":
                 {
                     await consumeStream({
-                        stream: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseJsonEventStream"])({
+                        stream: (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseJsonEventStream"])({
                             stream: response.body,
                             schema: uiMessageChunkSchema
                         }).pipeThrough(new TransformStream({
@@ -18399,12 +18213,12 @@ var HttpChatTransport = class {
     }
     async sendMessages({ abortSignal, ...options }) {
         var _a25, _b25, _c, _d;
-        const resolvedBody = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.body);
-        const resolvedHeaders = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.headers);
-        const resolvedCredentials = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.credentials);
+        const resolvedBody = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.body);
+        const resolvedHeaders = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.headers);
+        const resolvedCredentials = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.credentials);
         const baseHeaders = {
-            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(resolvedHeaders),
-            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(options.headers)
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(resolvedHeaders),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(options.headers)
         };
         const preparedRequest = await ((_a25 = this.prepareSendMessagesRequest) == null ? void 0 : _a25.call(this, {
             api: this.api,
@@ -18421,7 +18235,7 @@ var HttpChatTransport = class {
             messageId: options.messageId
         }));
         const api = (_b25 = preparedRequest == null ? void 0 : preparedRequest.api) != null ? _b25 : this.api;
-        const headers = (preparedRequest == null ? void 0 : preparedRequest.headers) !== void 0 ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(preparedRequest.headers) : baseHeaders;
+        const headers = (preparedRequest == null ? void 0 : preparedRequest.headers) !== void 0 ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(preparedRequest.headers) : baseHeaders;
         const body = (preparedRequest == null ? void 0 : preparedRequest.body) !== void 0 ? preparedRequest.body : {
             ...resolvedBody,
             ...options.body,
@@ -18452,12 +18266,12 @@ var HttpChatTransport = class {
     }
     async reconnectToStream(options) {
         var _a25, _b25, _c, _d;
-        const resolvedBody = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.body);
-        const resolvedHeaders = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.headers);
-        const resolvedCredentials = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.credentials);
+        const resolvedBody = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.body);
+        const resolvedHeaders = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.headers);
+        const resolvedCredentials = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["resolve"])(this.credentials);
         const baseHeaders = {
-            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(resolvedHeaders),
-            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(options.headers)
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(resolvedHeaders),
+            ...(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(options.headers)
         };
         const preparedRequest = await ((_a25 = this.prepareReconnectToStreamRequest) == null ? void 0 : _a25.call(this, {
             api: this.api,
@@ -18471,7 +18285,7 @@ var HttpChatTransport = class {
             requestMetadata: options.metadata
         }));
         const api = (_b25 = preparedRequest == null ? void 0 : preparedRequest.api) != null ? _b25 : `${this.api}/${options.chatId}/stream`;
-        const headers = (preparedRequest == null ? void 0 : preparedRequest.headers) !== void 0 ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(preparedRequest.headers) : baseHeaders;
+        const headers = (preparedRequest == null ? void 0 : preparedRequest.headers) !== void 0 ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["normalizeHeaders"])(preparedRequest.headers) : baseHeaders;
         const credentials = (_c = preparedRequest == null ? void 0 : preparedRequest.credentials) != null ? _c : resolvedCredentials;
         const fetch2 = (_d = this.fetch) != null ? _d : globalThis.fetch;
         const response = await fetch2(api, {
@@ -18498,7 +18312,7 @@ var DefaultChatTransport = class extends HttpChatTransport {
         super(options);
     }
     processResponseStream(stream) {
-        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseJsonEventStream"])({
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["parseJsonEventStream"])({
             stream,
             schema: uiMessageChunkSchema
         }).pipeThrough(new TransformStream({
@@ -18513,7 +18327,7 @@ var DefaultChatTransport = class extends HttpChatTransport {
 };
 // src/ui/chat.ts
 var AbstractChat = class {
-    constructor({ generateId: generateId4 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"], id = generateId4(), transport = new DefaultChatTransport(), messageMetadataSchema, dataPartSchemas, state, onError, onToolCall, onFinish, onData, sendAutomaticallyWhen }){
+    constructor({ generateId: generateId4 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["generateId"], id = generateId4(), transport = new DefaultChatTransport(), messageMetadataSchema, dataPartSchemas, state, onError, onToolCall, onFinish, onData, sendAutomaticallyWhen }){
         this.pendingMessagePreparations = /* @__PURE__ */ new Set();
         this.activeResponse = void 0;
         this.activeResumeRequest = void 0;
@@ -19085,7 +18899,7 @@ async function uploadFile({ api, data: dataArg, mediaType: mediaTypeArg, filenam
         type: "data",
         data: dataArg
     } : dataArg;
-    const mediaType = mediaTypeArg != null ? mediaTypeArg : data.type === "text" ? "text/plain" : data.type === "stream" ? "application/octet-stream" : (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
+    const mediaType = mediaTypeArg != null ? mediaTypeArg : data.type === "text" ? "text/plain" : data.type === "stream" ? "application/octet-stream" : (_a25 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["detectMediaType"])({
         data: data.data
     })) != null ? _a25 : isLikelyText(data.data) ? "text/plain" : "application/octet-stream";
     let result;
@@ -19133,7 +18947,7 @@ var DefaultUploadFileResult = class {
 function isLikelyText(data) {
     const CHECK_LENGTH = 512;
     const BASE64_CHECK_LENGTH = Math.ceil((CHECK_LENGTH + 4) / 3) * 4;
-    const bytes = typeof data === "string" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$ai$2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(data.substring(0, Math.min(data.length, BASE64_CHECK_LENGTH))) : data;
+    const bytes = typeof data === "string" ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ai$2d$sdk$2f$provider$2d$utils$2f$dist$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["convertBase64ToUint8Array"])(data.substring(0, Math.min(data.length, BASE64_CHECK_LENGTH))) : data;
     const checkLength = Math.min(bytes.length, CHECK_LENGTH);
     if (checkLength === 0) return false;
     for(let i = 0; i < checkLength; i++){
@@ -19167,4 +18981,4 @@ async function uploadSkill({ api, files, displayTitle, providerOptions }) {
 }),
 ]);
 
-//# sourceMappingURL=node_modules_ai_dist_index_0-wnkph.js.map
+//# sourceMappingURL=1k32_ai_dist_index_1-3y5h3.js.map

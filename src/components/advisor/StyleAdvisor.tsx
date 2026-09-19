@@ -1,10 +1,35 @@
 "use client";
 
+import { BuildCard } from "./BuildCard";
 import { DefaultChatTransport } from "ai";
 import { useChat } from "@ai-sdk/react";
 import { useEffect, useRef, useState } from "react";
 import { useConfiguratorStore } from "@/store/configuratorStore";
 import { X, Send, Square, ArrowDown, Bot, User } from "lucide-react";
+
+type AdvisorToolPart = {
+  type: "tool-configureProduct";
+  toolCallId: string;
+  state: "input-streaming" | "input-available" | "output-available" | "output-error";
+  input?: unknown;
+  output?: BuildCardInvocation["result"];
+  errorText?: string;
+};
+
+type BuildCardInvocation = {
+  state: "call" | "result";
+  toolName: "configureProduct";
+  args?: Record<string, unknown>;
+  result?: {
+    layout: string;
+    caseColor: string;
+    switchType: string;
+    keycapSet: string;
+    addOns: string[];
+    totalPrice: number;
+    reasoning: Array<{ choice: string; why: string }>;
+  };
+};
 
 export function StyleAdvisor() {
   const isOpen = useConfiguratorStore((s) => s.isAdvisorOpen);
@@ -119,17 +144,51 @@ export function StyleAdvisor() {
                 </div>
               )}
               <div
-                className={`p-3 rounded-xl max-w-[80%] whitespace-pre-wrap leading-relaxed ${
+                className={`p-3 rounded-xl max-w-[85%] whitespace-pre-wrap leading-relaxed ${
                   m.role === "user"
                     ? "bg-neutral-900 text-white rounded-br-none"
                     : "bg-neutral-100 text-neutral-800 rounded-bl-none"
                 }`}
               >
+                {/* Render Text Parts */}
                 {m.parts
-                  .filter((part) => part.type === "text")
+                  ?.filter((part) => part.type === "text")
                   .map((part, index) => (
-                    <span key={`${m.id}-part-${index}`}>{part.text}</span>
+                    <span key={`${m.id}-text-${index}`}>{part.text}</span>
                   ))}
+
+                {/* Render the current AI SDK tool-part shape through BuildCard's view model. */}
+                {m.parts
+                  ?.filter((part) => part.type === "tool-configureProduct")
+                  .map((part) => {
+                    const toolPart = part as unknown as AdvisorToolPart;
+                    if (toolPart.state === "output-error") return null;
+
+                    const invocation: BuildCardInvocation =
+                      toolPart.state === "output-available"
+                        ? {
+                            state: "result",
+                            toolName: "configureProduct",
+                            args: typeof toolPart.input === "object" && toolPart.input !== null
+                              ? (toolPart.input as Record<string, unknown>)
+                              : undefined,
+                            result: toolPart.output,
+                          }
+                        : {
+                            state: "call",
+                            toolName: "configureProduct",
+                            args: typeof toolPart.input === "object" && toolPart.input !== null
+                              ? (toolPart.input as Record<string, unknown>)
+                              : undefined,
+                          };
+
+                    return (
+                      <BuildCard
+                        key={toolPart.toolCallId}
+                        invocation={invocation}
+                      />
+                    );
+                  })}
               </div>
               {m.role === "user" && (
                 <div className="w-7 h-7 rounded-full bg-neutral-200 text-neutral-700 flex items-center justify-center shrink-0 text-xs">
@@ -162,7 +221,13 @@ export function StyleAdvisor() {
         )}
 
         {/* Input Form */}
-        <form onSubmit={(e) => { e.preventDefault(); handleSubmit(e); }} className="p-4 border-t bg-white space-y-2">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            handleSubmit(e);
+          }}
+          className="p-4 border-t bg-white space-y-2"
+        >
           <div className="flex gap-2">
             <textarea
               value={input}
