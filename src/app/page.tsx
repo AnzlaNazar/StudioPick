@@ -1,17 +1,33 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useConfiguratorStore } from "@/store/configuratorStore";
-import { StyleAdvisor } from "@/components/advisor/StyleAdvisor";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useSyncExternalStore } from "react";
+
+const StyleAdvisor = dynamic(
+  () => import("@/components/advisor/StyleAdvisor").then((module) => module.StyleAdvisor),
+  { ssr: false },
+);
 
 export default function Home() {
-  const [mounted, setMounted] = useState(false);
-  const { layout, caseColor, switchType, computedPrice, setAdvisorOpen } =
+  const advisorTriggerRef = useRef<HTMLButtonElement>(null);
+  const advisorWasOpenRef = useRef(false);
+  const mounted = useSyncExternalStore(
+    () => () => undefined,
+    () => true,
+    () => false,
+  );
+  const { layout, caseColor, switchType, computedPrice, isAdvisorOpen, setAdvisorOpen } =
     useConfiguratorStore();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    if (isAdvisorOpen) {
+      advisorWasOpenRef.current = true;
+    } else if (advisorWasOpenRef.current) {
+      advisorWasOpenRef.current = false;
+      advisorTriggerRef.current?.focus();
+    }
+  }, [isAdvisorOpen]);
 
   return (
     <div className="min-h-screen bg-neutral-100 text-neutral-900 flex flex-col justify-between">
@@ -19,7 +35,7 @@ export default function Home() {
         The Forge — Custom Mechanical Keyboard
       </header>
 
-      <main className="max-w-4xl mx-auto w-full p-6 space-y-6">
+      <main id="main-content" className="mx-auto w-full max-w-4xl space-y-6 p-6">
         {/* Placeholder 1: Product Stage */}
         <section className="border-2 border-dashed border-neutral-300 rounded-lg p-6 bg-white">
           <h2 className="text-xl font-bold mb-1">Product Stage</h2>
@@ -52,8 +68,11 @@ export default function Home() {
             </p>
           </div>
           <button
+            ref={advisorTriggerRef}
+            type="button"
             onClick={() => setAdvisorOpen(true)}
-            className="px-4 py-2 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-800"
+            aria-label="Open Style Advisor"
+            className="rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
           >
             Open Style Advisor
           </button>
@@ -71,7 +90,7 @@ export default function Home() {
             <span className="text-lg font-bold">
               ${mounted ? computedPrice() : "..."}
             </span>
-            <button className="px-4 py-2 bg-neutral-900 text-white text-sm rounded hover:bg-neutral-800">
+            <button type="button" aria-label="Add current build to bag" className="rounded bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2">
               Add to Bag
             </button>
           </div>
@@ -79,7 +98,7 @@ export default function Home() {
       </footer>
 
       {/* Style Advisor Chat Drawer */}
-      <StyleAdvisor />
+      {isAdvisorOpen && <StyleAdvisor />}
     </div>
   );
 }

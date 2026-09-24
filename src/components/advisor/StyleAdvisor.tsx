@@ -51,6 +51,10 @@ export function StyleAdvisor() {
     "Under $160 minimal",
   ];
   const scrollRef = useRef<HTMLDivElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const triggerRef = useRef<HTMLElement | null>(null);
+  const wasOpenRef = useRef(false);
   const [isAtBottom, setIsAtBottom] = useState(true);
 
   const handleSubmit = (event?: { preventDefault?: () => void }) => {
@@ -88,53 +92,102 @@ export function StyleAdvisor() {
     }
   }, [messages, isAtBottom]);
 
-  // Trap Escape key to close drawer
+  const closeAdvisor = () => setIsOpen(false);
+
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && isOpen) setIsOpen(false);
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    if (isOpen) {
+      if (!wasOpenRef.current && document.activeElement instanceof HTMLElement) {
+        triggerRef.current = document.activeElement;
+      }
+      wasOpenRef.current = true;
+      closeButtonRef.current?.focus();
+      return;
+    }
+
+    if (wasOpenRef.current) {
+      wasOpenRef.current = false;
+      triggerRef.current?.focus();
+      triggerRef.current = null;
+    }
   }, [isOpen, setIsOpen]);
+
+  const handleDialogKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeAdvisor();
+      return;
+    }
+
+    if (event.key !== "Tab" || !dialogRef.current) return;
+
+    const focusableElements = Array.from(
+      dialogRef.current.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), textarea, [tabindex]:not([tabindex="-1"])',
+      ),
+    );
+    if (focusableElements.length === 0) return;
+
+    const firstElement = focusableElements[0];
+    const lastElement = focusableElements[focusableElements.length - 1];
+    if (event.shiftKey && document.activeElement === firstElement) {
+      event.preventDefault();
+      lastElement.focus();
+    } else if (!event.shiftKey && document.activeElement === lastElement) {
+      event.preventDefault();
+      firstElement.focus();
+    }
+  };
 
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-black/40 backdrop-blur-sm">
       <div
+        ref={dialogRef}
         role="dialog"
         aria-modal="true"
-        aria-label="Style Advisor Chat"
+        aria-labelledby="style-advisor-title"
+        onKeyDown={handleDialogKeyDown}
         className="flex h-[100dvh] w-full min-h-0 max-w-md flex-col bg-white shadow-2xl animate-in slide-in-from-right duration-200"
       >
         {/* Header */}
-        <div className="p-4 border-b flex items-center justify-between bg-neutral-50">
+        <header className="flex items-center justify-between border-b bg-neutral-50 p-4">
           <div className="flex items-center gap-2">
-            <Bot className="h-5 w-5 text-neutral-800" />
+            <Bot className="h-5 w-5 text-neutral-800" aria-hidden="true" />
             <div>
-              <h2 className="font-bold text-sm text-neutral-900">Style Advisor</h2>
-              <p className="text-xs text-neutral-500">AI mechanical keyboard specialist</p>
+              <h2 id="style-advisor-title" className="text-sm font-bold text-neutral-900">Style Advisor</h2>
+              <p className="text-xs text-neutral-600">AI mechanical keyboard specialist</p>
             </div>
           </div>
           <button
+            ref={closeButtonRef}
+            type="button"
             onClick={() => setIsOpen(false)}
-            className="p-1 rounded-md text-neutral-500 hover:bg-neutral-200"
+            className="rounded-md p-2 text-neutral-600 hover:bg-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
             aria-label="Close chat"
           >
-            <X className="h-5 w-5" />
+            <X className="h-5 w-5" aria-hidden="true" />
           </button>
-        </div>
+        </header>
+
+        <span className="sr-only" role="status" aria-live="polite">
+          {error ? "The advisor could not finish the response." : isLoading ? "Analyzing build constraints..." : ""}
+        </span>
 
         {/* Message List */}
         <div
           ref={scrollRef}
           onScroll={handleScroll}
+          role="log"
+          aria-label="Style Advisor conversation"
           aria-live="polite"
+          aria-atomic="false"
+          tabIndex={0}
           className="flex-1 overflow-y-auto p-4 space-y-4"
         >
           {messages.length === 0 && (
-            <div className="space-y-4 py-12 text-center text-neutral-500">
-              <Bot className="h-8 w-8 mx-auto text-neutral-400" />
+            <div className="space-y-4 py-12 text-center text-neutral-600">
+              <Bot className="mx-auto h-8 w-8 text-neutral-500" aria-hidden="true" />
               <p className="text-sm font-medium text-neutral-700">How can I help you build today?</p>
               <p className="text-xs max-w-xs mx-auto">
                 Tell me your typing use-case, desk environment (quiet office, gaming), budget, or tactile preferences.
@@ -145,7 +198,8 @@ export function StyleAdvisor() {
                     key={prompt}
                     type="button"
                     onClick={() => handleStarterPrompt(prompt)}
-                    className="rounded-full border border-neutral-200 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-colors hover:border-neutral-400 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+                    aria-label={`Use starter prompt: ${prompt}`}
+                    className="rounded-full border border-neutral-200 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-colors hover:border-neutral-400 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
                   >
                     {prompt}
                   </button>
@@ -162,8 +216,8 @@ export function StyleAdvisor() {
               }`}
             >
               {m.role !== "user" && (
-                <div className="w-7 h-7 rounded-full bg-neutral-900 text-white flex items-center justify-center shrink-0 text-xs">
-                  <Bot className="h-4 w-4" />
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-xs text-white" aria-hidden="true">
+                  <Bot className="h-4 w-4" aria-hidden="true" />
                 </div>
               )}
               <div
@@ -214,8 +268,8 @@ export function StyleAdvisor() {
                   })}
               </div>
               {m.role === "user" && (
-                <div className="w-7 h-7 rounded-full bg-neutral-200 text-neutral-700 flex items-center justify-center shrink-0 text-xs">
-                  <User className="h-4 w-4" />
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-200 text-xs text-neutral-700" aria-hidden="true">
+                  <User className="h-4 w-4" aria-hidden="true" />
                 </div>
               )}
             </div>
@@ -223,8 +277,8 @@ export function StyleAdvisor() {
 
           {isLoading && messages[messages.length - 1]?.role === "user" && (
             <div className="flex gap-3 text-sm justify-start items-center text-neutral-400">
-              <div className="w-7 h-7 rounded-full bg-neutral-900 text-white flex items-center justify-center shrink-0 text-xs">
-                <Bot className="h-4 w-4" />
+              <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-xs text-white" aria-hidden="true">
+                <Bot className="h-4 w-4" aria-hidden="true" />
               </div>
               <span className="text-xs animate-pulse">Analyzing build constraints...</span>
             </div>
@@ -239,7 +293,8 @@ export function StyleAdvisor() {
               <button
                 type="button"
                 onClick={() => regenerate()}
-                className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-rose-900 shadow-sm ring-1 ring-inset ring-rose-200 hover:bg-rose-100"
+                aria-label="Retry advisor response"
+                className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-rose-900 shadow-sm ring-1 ring-inset ring-rose-200 hover:bg-rose-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-900 focus-visible:ring-offset-2"
               >
                 <RefreshCw className="h-3.5 w-3.5" aria-hidden="true" />
                 Retry
@@ -252,10 +307,12 @@ export function StyleAdvisor() {
         {!isAtBottom && (
           <div className="flex justify-center pb-2">
             <button
+              type="button"
               onClick={scrollToBottom}
-              className="flex items-center gap-1 text-xs bg-neutral-800 text-white px-3 py-1.5 rounded-full shadow hover:bg-neutral-700"
+              aria-label="Jump to latest message"
+              className="flex items-center gap-1 rounded-full bg-neutral-800 px-3 py-1.5 text-xs text-white shadow hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
             >
-              <ArrowDown className="h-3 w-3" /> Jump to latest
+              <ArrowDown className="h-3 w-3" aria-hidden="true" /> Jump to latest
             </button>
           </div>
         )}
@@ -272,9 +329,10 @@ export function StyleAdvisor() {
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
+              aria-label="Message the Style Advisor"
               placeholder="e.g. Quiet switches for open office, budget $200..."
               rows={2}
-              className="flex-1 resize-none border rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900"
+              className="flex-1 resize-none rounded-lg border p-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
               onKeyDown={(e) => {
                 if (e.key === "Enter" && !e.shiftKey) {
                   e.preventDefault();
@@ -286,19 +344,19 @@ export function StyleAdvisor() {
               <button
                 type="button"
                 onClick={stop}
-                className="px-4 bg-rose-600 hover:bg-rose-700 text-white rounded-lg flex items-center justify-center"
+                className="flex items-center justify-center rounded-lg bg-rose-600 px-4 text-white hover:bg-rose-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-900 focus-visible:ring-offset-2"
                 aria-label="Stop generating"
               >
-                <Square className="h-4 w-4" />
+                <Square className="h-4 w-4" aria-hidden="true" />
               </button>
             ) : (
               <button
                 type="submit"
                 disabled={!input.trim()}
-                className="px-4 bg-neutral-900 hover:bg-neutral-800 disabled:opacity-50 text-white rounded-lg flex items-center justify-center"
+                className="flex items-center justify-center rounded-lg bg-neutral-900 px-4 text-white hover:bg-neutral-800 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"
                 aria-label="Send message"
               >
-                <Send className="h-4 w-4" />
+                <Send className="h-4 w-4" aria-hidden="true" />
               </button>
             )}
           </div>

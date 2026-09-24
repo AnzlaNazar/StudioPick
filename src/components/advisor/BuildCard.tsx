@@ -68,8 +68,8 @@ export function BuildCard({ invocation }: { invocation: ToolInvocation }) {
   return (
     <div className="my-4 space-y-4 rounded-xl border border-neutral-200 bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between border-b pb-3">
-        <div className="flex items-center gap-2"><Sparkles className="h-4 w-4 text-amber-500" /><h3 className="text-sm font-bold text-neutral-900">Recommended Build</h3></div>
-        <div className="flex items-center gap-2"><span className="inline-block h-3.5 w-3.5 rounded-full border border-neutral-300" style={{ backgroundColor: colorHex }} title={`Case: ${caseColor}`} /><span className="font-mono text-base font-bold text-neutral-900">${result.totalPrice}</span></div>
+        <div className="flex items-center gap-2"><Sparkles className="h-4 w-4 text-amber-500" aria-hidden="true" /><h3 className="text-sm font-bold text-neutral-900">Recommended Build</h3></div>
+        <div className="flex items-center gap-2"><span className="inline-block h-3.5 w-3.5 rounded-full border border-neutral-300" style={{ backgroundColor: colorHex }} title={`Case: ${caseColor}`} aria-label={`Case color: ${caseColor}`} /><span className="font-mono text-base font-bold text-neutral-900" aria-label={`Total price: ${result.totalPrice} dollars`}>${result.totalPrice}</span></div>
       </div>
       <div className="grid grid-cols-2 gap-2 text-xs">
         <div className="rounded border bg-neutral-50 p-2"><span className="block text-[10px] uppercase text-neutral-400">Layout</span><span className="font-semibold text-neutral-800">{layout.toUpperCase()}</span></div>
@@ -78,10 +78,10 @@ export function BuildCard({ invocation }: { invocation: ToolInvocation }) {
         <div className="rounded border bg-neutral-50 p-2"><span className="block text-[10px] uppercase text-neutral-400">Add-ons</span><span className="font-semibold text-neutral-800">{addOns.length ? addOns.join(", ") : "None"}</span></div>
       </div>
       <div className="border-t pt-2">
-        <button type="button" aria-expanded={showReasoning} onClick={() => setShowReasoning(!showReasoning)} className="flex w-full items-center justify-between py-1 text-xs text-neutral-500 hover:text-neutral-800"><span>Why this build?</span><ChevronDown className={`h-3.5 w-3.5 transition-transform ${showReasoning ? "rotate-180" : ""}`} /></button>
-        {showReasoning && <div className="mt-2 space-y-1.5 rounded border bg-neutral-50 p-2.5 text-xs text-neutral-600">{result.reasoning.map((reason) => <div key={reason.choice}><span className="font-semibold text-neutral-800">{reason.choice}: </span><span>{reason.why}</span></div>)}</div>}
+        <button type="button" aria-expanded={showReasoning} aria-controls="build-reasoning" aria-label={`${showReasoning ? "Hide" : "Show"} recommendation reasoning`} onClick={() => setShowReasoning(!showReasoning)} className="flex w-full items-center justify-between py-1 text-xs text-neutral-600 hover:text-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2"><span>Why this build?</span><ChevronDown className={`h-3.5 w-3.5 transition-transform ${showReasoning ? "rotate-180" : ""}`} aria-hidden="true" /></button>
+        {showReasoning && <div id="build-reasoning" className="mt-2 space-y-1.5 rounded border bg-neutral-50 p-2.5 text-xs text-neutral-600">{result.reasoning.map((reason) => <div key={reason.choice}><span className="font-semibold text-neutral-800">{reason.choice}: </span><span>{reason.why}</span></div>)}</div>}
       </div>
-      <button type="button" onClick={handleApply} disabled={applied} className="flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-neutral-800 disabled:bg-emerald-600">{applied ? <><Check className="h-4 w-4" /> Applied to Configurator!</> : "Apply Build"}</button>
+      <button type="button" onClick={handleApply} disabled={applied} className="flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2 disabled:bg-emerald-600">{applied ? <><Check className="h-4 w-4" aria-hidden="true" /> Applied to Configurator!</> : "Apply Build"}</button>
     </div>
   );
 }

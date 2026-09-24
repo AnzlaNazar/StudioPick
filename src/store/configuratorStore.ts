@@ -20,6 +20,7 @@ interface ConfiguratorState extends BuildSelections {
   setSwitchType: (sw: string) => void;
   setKeycapSet: (keycap: string) => void;
   toggleAddOn: (addonId: string) => void;
+  reset: () => void;
   setPersonalizationText: (text: string) => void;
   applyBuild: (build: BuildSelections) => void;
   addToCart: () => void;
@@ -45,6 +46,18 @@ export const useConfiguratorStore = create<ConfiguratorState>()(
       setCaseColor: (caseColor) => set({ caseColor }),
       setSwitchType: (switchType) => set({ switchType }),
       setKeycapSet: (keycapSet) => set({ keycapSet }),
+
+      reset: () =>
+        set({
+          layout: "60",
+          caseColor: "charcoal",
+          switchType: "linear",
+          keycapSet: "standard",
+          addOns: [],
+          personalizationText: "",
+          cart: [],
+          isAdvisorOpen: false,
+        }),
 
       toggleAddOn: (addonId) =>
         set((state) => ({

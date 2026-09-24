@@ -18,13 +18,16 @@ var _s = __turbopack_context__.k.signature();
 ;
 function Home() {
     _s();
-    const [mounted, setMounted] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const mounted = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSyncExternalStore"])({
+        "Home.useSyncExternalStore[mounted]": ()=>({
+                "Home.useSyncExternalStore[mounted]": ()=>undefined
+            })["Home.useSyncExternalStore[mounted]"]
+    }["Home.useSyncExternalStore[mounted]"], {
+        "Home.useSyncExternalStore[mounted]": ()=>true
+    }["Home.useSyncExternalStore[mounted]"], {
+        "Home.useSyncExternalStore[mounted]": ()=>false
+    }["Home.useSyncExternalStore[mounted]"]);
     const { layout, caseColor, switchType, computedPrice, setAdvisorOpen } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$configuratorStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConfiguratorStore"])();
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "Home.useEffect": ()=>{
-            setMounted(true);
-        }
-    }["Home.useEffect"], []);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-neutral-100 text-neutral-900 flex flex-col justify-between",
         children: [
@@ -37,7 +40,8 @@ function Home() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
-                className: "max-w-4xl mx-auto w-full p-6 space-y-6",
+                id: "main-content",
+                className: "mx-auto w-full max-w-4xl space-y-6 p-6",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                         className: "border-2 border-dashed border-neutral-300 rounded-lg p-6 bg-white",
@@ -177,8 +181,10 @@ function Home() {
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "button",
                                 onClick: ()=>setAdvisorOpen(true),
-                                className: "px-4 py-2 bg-neutral-900 text-white text-sm font-medium rounded-lg hover:bg-neutral-800",
+                                "aria-label": "Open Style Advisor",
+                                className: "rounded-lg bg-neutral-900 px-4 py-2 text-sm font-medium text-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                                 children: "Open Style Advisor"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/page.tsx",
@@ -209,7 +215,7 @@ function Home() {
                                     children: "Sticky Summary Bar"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 67,
+                                    lineNumber: 69,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -217,13 +223,13 @@ function Home() {
                                     children: "Live total & cart action"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 68,
+                                    lineNumber: 70,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 66,
+                            lineNumber: 68,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -237,37 +243,39 @@ function Home() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 71,
+                                    lineNumber: 73,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    className: "px-4 py-2 bg-neutral-900 text-white text-sm rounded hover:bg-neutral-800",
+                                    type: "button",
+                                    "aria-label": "Add current build to bag",
+                                    className: "rounded bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                                     children: "Add to Bag"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 70,
+                            lineNumber: 72,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/page.tsx",
-                    lineNumber: 65,
+                    lineNumber: 67,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 64,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$components$2f$advisor$2f$StyleAdvisor$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StyleAdvisor"], {}, void 0, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 82,
+                lineNumber: 84,
                 columnNumber: 7
             }, this)
         ]
@@ -277,8 +285,9 @@ function Home() {
         columnNumber: 5
     }, this);
 }
-_s(Home, "JypJmr9wZw2ceq99sWXjjw7N1Co=", false, function() {
+_s(Home, "R7iuTN0IfmLUtlhOgmO9XciQ7u0=", false, function() {
     return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSyncExternalStore"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$configuratorStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConfiguratorStore"]
     ];
 });
@@ -422,7 +431,8 @@ function BuildCard({ invocation }) {
                         className: "flex items-center gap-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sparkles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sparkles$3e$__["Sparkles"], {
-                                className: "h-4 w-4 text-amber-500"
+                                className: "h-4 w-4 text-amber-500",
+                                "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 71,
@@ -434,7 +444,7 @@ function BuildCard({ invocation }) {
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 71,
-                                columnNumber: 97
+                                columnNumber: 116
                             }, this)
                         ]
                     }, void 0, true, {
@@ -450,7 +460,8 @@ function BuildCard({ invocation }) {
                                 style: {
                                     backgroundColor: colorHex
                                 },
-                                title: `Case: ${caseColor}`
+                                title: `Case: ${caseColor}`,
+                                "aria-label": `Case color: ${caseColor}`
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 72,
@@ -458,6 +469,7 @@ function BuildCard({ invocation }) {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "font-mono text-base font-bold text-neutral-900",
+                                "aria-label": `Total price: ${result.totalPrice} dollars`,
                                 children: [
                                     "$",
                                     result.totalPrice
@@ -465,7 +477,7 @@ function BuildCard({ invocation }) {
                             }, void 0, true, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 72,
-                                columnNumber: 201
+                                columnNumber: 241
                             }, this)
                         ]
                     }, void 0, true, {
@@ -594,22 +606,25 @@ function BuildCard({ invocation }) {
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                         type: "button",
                         "aria-expanded": showReasoning,
+                        "aria-controls": "build-reasoning",
+                        "aria-label": `${showReasoning ? "Hide" : "Show"} recommendation reasoning`,
                         onClick: ()=>setShowReasoning(!showReasoning),
-                        className: "flex w-full items-center justify-between py-1 text-xs text-neutral-500 hover:text-neutral-800",
+                        className: "flex w-full items-center justify-between py-1 text-xs text-neutral-600 hover:text-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Why this build?"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 81,
-                                columnNumber: 216
+                                columnNumber: 430
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
-                                className: `h-3.5 w-3.5 transition-transform ${showReasoning ? "rotate-180" : ""}`
+                                className: `h-3.5 w-3.5 transition-transform ${showReasoning ? "rotate-180" : ""}`,
+                                "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 81,
-                                columnNumber: 244
+                                columnNumber: 458
                             }, this)
                         ]
                     }, void 0, true, {
@@ -618,6 +633,7 @@ function BuildCard({ invocation }) {
                         columnNumber: 9
                     }, this),
                     showReasoning && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        id: "build-reasoning",
                         className: "mt-2 space-y-1.5 rounded border bg-neutral-50 p-2.5 text-xs text-neutral-600",
                         children: result.reasoning.map((reason)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
@@ -630,20 +646,20 @@ function BuildCard({ invocation }) {
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                         lineNumber: 82,
-                                        columnNumber: 180
+                                        columnNumber: 201
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         children: reason.why
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                         lineNumber: 82,
-                                        columnNumber: 253
+                                        columnNumber: 274
                                     }, this)
                                 ]
                             }, reason.choice, true, {
                                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
                                 lineNumber: 82,
-                                columnNumber: 155
+                                columnNumber: 176
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/advisor/BuildCard.tsx",
@@ -660,22 +676,23 @@ function BuildCard({ invocation }) {
                 type: "button",
                 onClick: handleApply,
                 disabled: applied,
-                className: "flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-neutral-800 disabled:bg-emerald-600",
+                className: "flex w-full items-center justify-center gap-2 rounded-lg bg-neutral-900 px-4 py-2 text-xs font-semibold text-white transition-colors hover:bg-neutral-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2 disabled:bg-emerald-600",
                 children: applied ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
-                            className: "h-4 w-4"
+                            className: "h-4 w-4",
+                            "aria-hidden": "true"
                         }, void 0, false, {
                             fileName: "[project]/src/components/advisor/BuildCard.tsx",
                             lineNumber: 84,
-                            columnNumber: 273
+                            columnNumber: 380
                         }, this),
                         " Applied to Configurator!"
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/advisor/BuildCard.tsx",
                     lineNumber: 84,
-                    columnNumber: 271
+                    columnNumber: 378
                 }, this) : "Apply Build"
             }, void 0, false, {
                 fileName: "[project]/src/components/advisor/BuildCard.tsx",
@@ -752,6 +769,10 @@ function StyleAdvisor() {
         "Under $160 minimal"
     ];
     const scrollRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const dialogRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const closeButtonRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const triggerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    const wasOpenRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(false);
     const [isAtBottom, setIsAtBottom] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
     const handleSubmit = (event)=>{
         event?.preventDefault?.();
@@ -792,111 +813,156 @@ function StyleAdvisor() {
         messages,
         isAtBottom
     ]);
-    // Trap Escape key to close drawer
+    const closeAdvisor = ()=>setIsOpen(false);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "StyleAdvisor.useEffect": ()=>{
-            const handleKeyDown = {
-                "StyleAdvisor.useEffect.handleKeyDown": (e)=>{
-                    if (e.key === "Escape" && isOpen) setIsOpen(false);
+            if (isOpen) {
+                if (!wasOpenRef.current && document.activeElement instanceof HTMLElement) {
+                    triggerRef.current = document.activeElement;
                 }
-            }["StyleAdvisor.useEffect.handleKeyDown"];
-            window.addEventListener("keydown", handleKeyDown);
-            return ({
-                "StyleAdvisor.useEffect": ()=>window.removeEventListener("keydown", handleKeyDown)
-            })["StyleAdvisor.useEffect"];
+                wasOpenRef.current = true;
+                closeButtonRef.current?.focus();
+                return;
+            }
+            if (wasOpenRef.current) {
+                wasOpenRef.current = false;
+                triggerRef.current?.focus();
+                triggerRef.current = null;
+            }
         }
     }["StyleAdvisor.useEffect"], [
         isOpen,
         setIsOpen
     ]);
+    const handleDialogKeyDown = (event)=>{
+        if (event.key === "Escape") {
+            event.preventDefault();
+            closeAdvisor();
+            return;
+        }
+        if (event.key !== "Tab" || !dialogRef.current) return;
+        const focusableElements = Array.from(dialogRef.current.querySelectorAll('button:not([disabled]), textarea, [tabindex]:not([tabindex="-1"])'));
+        if (focusableElements.length === 0) return;
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        if (event.shiftKey && document.activeElement === firstElement) {
+            event.preventDefault();
+            lastElement.focus();
+        } else if (!event.shiftKey && document.activeElement === lastElement) {
+            event.preventDefault();
+            firstElement.focus();
+        }
+    };
     if (!isOpen) return null;
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "fixed inset-0 z-50 flex justify-end bg-black/40 backdrop-blur-sm",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            ref: dialogRef,
             role: "dialog",
             "aria-modal": "true",
-            "aria-label": "Style Advisor Chat",
+            "aria-labelledby": "style-advisor-title",
+            onKeyDown: handleDialogKeyDown,
             className: "flex h-[100dvh] w-full min-h-0 max-w-md flex-col bg-white shadow-2xl animate-in slide-in-from-right duration-200",
             children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "p-4 border-b flex items-center justify-between bg-neutral-50",
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                    className: "flex items-center justify-between border-b bg-neutral-50 p-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex items-center gap-2",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
-                                    className: "h-5 w-5 text-neutral-800"
+                                    className: "h-5 w-5 text-neutral-800",
+                                    "aria-hidden": "true"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 113,
+                                    lineNumber: 156,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                            className: "font-bold text-sm text-neutral-900",
+                                            id: "style-advisor-title",
+                                            className: "text-sm font-bold text-neutral-900",
                                             children: "Style Advisor"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 115,
+                                            lineNumber: 158,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-xs text-neutral-500",
+                                            className: "text-xs text-neutral-600",
                                             children: "AI mechanical keyboard specialist"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 116,
+                                            lineNumber: 159,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 114,
+                                    lineNumber: 157,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                            lineNumber: 112,
+                            lineNumber: 155,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            ref: closeButtonRef,
+                            type: "button",
                             onClick: ()=>setIsOpen(false),
-                            className: "p-1 rounded-md text-neutral-500 hover:bg-neutral-200",
+                            className: "rounded-md p-2 text-neutral-600 hover:bg-neutral-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                             "aria-label": "Close chat",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
-                                className: "h-5 w-5"
+                                className: "h-5 w-5",
+                                "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                lineNumber: 124,
+                                lineNumber: 169,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                            lineNumber: 119,
+                            lineNumber: 162,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                    lineNumber: 111,
+                    lineNumber: 154,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "sr-only",
+                    role: "status",
+                    "aria-live": "polite",
+                    children: error ? "The advisor could not finish the response." : isLoading ? "Analyzing build constraints..." : ""
+                }, void 0, false, {
+                    fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
+                    lineNumber: 173,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     ref: scrollRef,
                     onScroll: handleScroll,
+                    role: "log",
+                    "aria-label": "Style Advisor conversation",
                     "aria-live": "polite",
+                    "aria-atomic": "false",
+                    tabIndex: 0,
                     className: "flex-1 overflow-y-auto p-4 space-y-4",
                     children: [
                         messages.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "space-y-4 py-12 text-center text-neutral-500",
+                            className: "space-y-4 py-12 text-center text-neutral-600",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
-                                    className: "h-8 w-8 mx-auto text-neutral-400"
+                                    className: "mx-auto h-8 w-8 text-neutral-500",
+                                    "aria-hidden": "true"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 137,
+                                    lineNumber: 190,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -904,7 +970,7 @@ function StyleAdvisor() {
                                     children: "How can I help you build today?"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 138,
+                                    lineNumber: 191,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -912,7 +978,7 @@ function StyleAdvisor() {
                                     children: "Tell me your typing use-case, desk environment (quiet office, gaming), budget, or tactile preferences."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 139,
+                                    lineNumber: 192,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -920,39 +986,42 @@ function StyleAdvisor() {
                                     children: starterPrompts.map((prompt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             type: "button",
                                             onClick: ()=>handleStarterPrompt(prompt),
-                                            className: "rounded-full border border-neutral-200 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-colors hover:border-neutral-400 hover:bg-neutral-50 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2",
+                                            "aria-label": `Use starter prompt: ${prompt}`,
+                                            className: "rounded-full border border-neutral-200 bg-white px-3 py-2 text-xs font-medium text-neutral-700 shadow-sm transition-colors hover:border-neutral-400 hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                                             children: prompt
                                         }, prompt, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 197,
                                             columnNumber: 19
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 142,
+                                    lineNumber: 195,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                            lineNumber: 136,
+                            lineNumber: 189,
                             columnNumber: 13
                         }, this),
                         messages.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: `flex gap-3 text-sm ${m.role === "user" ? "justify-end" : "justify-start"}`,
                                 children: [
                                     m.role !== "user" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-7 h-7 rounded-full bg-neutral-900 text-white flex items-center justify-center shrink-0 text-xs",
+                                        className: "flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-xs text-white",
+                                        "aria-hidden": "true",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
-                                            className: "h-4 w-4"
+                                            className: "h-4 w-4",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 166,
+                                            lineNumber: 220,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                        lineNumber: 165,
+                                        lineNumber: 219,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -962,7 +1031,7 @@ function StyleAdvisor() {
                                                     children: part.text
                                                 }, `${m.id}-text-${index}`, false, {
                                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                                    lineNumber: 180,
+                                                    lineNumber: 234,
                                                     columnNumber: 21
                                                 }, this)),
                                             m.parts?.filter((part)=>part.type === "tool-configureProduct").map((part)=>{
@@ -982,51 +1051,55 @@ function StyleAdvisor() {
                                                     invocation: invocation
                                                 }, toolPart.toolCallId, false, {
                                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                                    lineNumber: 209,
+                                                    lineNumber: 263,
                                                     columnNumber: 23
                                                 }, this);
                                             })
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 223,
                                         columnNumber: 15
                                     }, this),
                                     m.role === "user" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-7 h-7 rounded-full bg-neutral-200 text-neutral-700 flex items-center justify-center shrink-0 text-xs",
+                                        className: "flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-200 text-xs text-neutral-700",
+                                        "aria-hidden": "true",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__User$3e$__["User"], {
-                                            className: "h-4 w-4"
+                                            className: "h-4 w-4",
+                                            "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 218,
+                                            lineNumber: 272,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                        lineNumber: 217,
+                                        lineNumber: 271,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, m.id, true, {
                                 fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                lineNumber: 158,
+                                lineNumber: 212,
                                 columnNumber: 13
                             }, this)),
                         isLoading && messages[messages.length - 1]?.role === "user" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "flex gap-3 text-sm justify-start items-center text-neutral-400",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "w-7 h-7 rounded-full bg-neutral-900 text-white flex items-center justify-center shrink-0 text-xs",
+                                    className: "flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-neutral-900 text-xs text-white",
+                                    "aria-hidden": "true",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bot$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bot$3e$__["Bot"], {
-                                        className: "h-4 w-4"
+                                        className: "h-4 w-4",
+                                        "aria-hidden": "true"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                        lineNumber: 227,
+                                        lineNumber: 281,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 226,
+                                    lineNumber: 280,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1034,13 +1107,13 @@ function StyleAdvisor() {
                                     children: "Analyzing build constraints..."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 229,
+                                    lineNumber: 283,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                            lineNumber: 225,
+                            lineNumber: 279,
                             columnNumber: 13
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1053,7 +1126,7 @@ function StyleAdvisor() {
                                             children: "The advisor could not finish that response."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 236,
+                                            lineNumber: 290,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1061,70 +1134,74 @@ function StyleAdvisor() {
                                             children: "Your conversation is still here. Please try again."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 237,
+                                            lineNumber: 291,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 235,
+                                    lineNumber: 289,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                     type: "button",
                                     onClick: ()=>regenerate(),
-                                    className: "inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-rose-900 shadow-sm ring-1 ring-inset ring-rose-200 hover:bg-rose-100",
+                                    "aria-label": "Retry advisor response",
+                                    className: "inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-white px-3 py-2 font-semibold text-rose-900 shadow-sm ring-1 ring-inset ring-rose-200 hover:bg-rose-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-900 focus-visible:ring-offset-2",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$refresh$2d$cw$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__RefreshCw$3e$__["RefreshCw"], {
                                             className: "h-3.5 w-3.5",
                                             "aria-hidden": "true"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                            lineNumber: 244,
+                                            lineNumber: 299,
                                             columnNumber: 17
                                         }, this),
                                         "Retry"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 239,
+                                    lineNumber: 293,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                            lineNumber: 234,
+                            lineNumber: 288,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                    lineNumber: 129,
+                    lineNumber: 178,
                     columnNumber: 9
                 }, this),
                 !isAtBottom && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex justify-center pb-2",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        type: "button",
                         onClick: scrollToBottom,
-                        className: "flex items-center gap-1 text-xs bg-neutral-800 text-white px-3 py-1.5 rounded-full shadow hover:bg-neutral-700",
+                        "aria-label": "Jump to latest message",
+                        className: "flex items-center gap-1 rounded-full bg-neutral-800 px-3 py-1.5 text-xs text-white shadow hover:bg-neutral-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDown$3e$__["ArrowDown"], {
-                                className: "h-3 w-3"
+                                className: "h-3 w-3",
+                                "aria-hidden": "true"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                lineNumber: 258,
+                                lineNumber: 315,
                                 columnNumber: 15
                             }, this),
                             " Jump to latest"
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                        lineNumber: 254,
+                        lineNumber: 309,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                    lineNumber: 253,
+                    lineNumber: 308,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -1139,9 +1216,10 @@ function StyleAdvisor() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
                                 value: input,
                                 onChange: (e)=>setInput(e.target.value),
+                                "aria-label": "Message the Style Advisor",
                                 placeholder: "e.g. Quiet switches for open office, budget $200...",
                                 rows: 2,
-                                className: "flex-1 resize-none border rounded-lg p-2 text-sm focus:outline-none focus:ring-2 focus:ring-neutral-900",
+                                className: "flex-1 resize-none rounded-lg border p-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                                 onKeyDown: (e)=>{
                                     if (e.key === "Enter" && !e.shiftKey) {
                                         e.preventDefault();
@@ -1150,66 +1228,68 @@ function StyleAdvisor() {
                                 }
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                lineNumber: 272,
+                                lineNumber: 329,
                                 columnNumber: 13
                             }, this),
                             isLoading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "button",
                                 onClick: stop,
-                                className: "px-4 bg-rose-600 hover:bg-rose-700 text-white rounded-lg flex items-center justify-center",
+                                className: "flex items-center justify-center rounded-lg bg-rose-600 px-4 text-white hover:bg-rose-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-900 focus-visible:ring-offset-2",
                                 "aria-label": "Stop generating",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$square$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Square$3e$__["Square"], {
-                                    className: "h-4 w-4"
+                                    className: "h-4 w-4",
+                                    "aria-hidden": "true"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 292,
+                                    lineNumber: 350,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                lineNumber: 286,
+                                lineNumber: 344,
                                 columnNumber: 15
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 type: "submit",
                                 disabled: !input.trim(),
-                                className: "px-4 bg-neutral-900 hover:bg-neutral-800 disabled:opacity-50 text-white rounded-lg flex items-center justify-center",
+                                className: "flex items-center justify-center rounded-lg bg-neutral-900 px-4 text-white hover:bg-neutral-800 disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 focus-visible:ring-offset-2",
                                 "aria-label": "Send message",
                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
-                                    className: "h-4 w-4"
+                                    className: "h-4 w-4",
+                                    "aria-hidden": "true"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                    lineNumber: 301,
+                                    lineNumber: 359,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                                lineNumber: 295,
+                                lineNumber: 353,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                        lineNumber: 271,
+                        lineNumber: 328,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-                    lineNumber: 264,
+                    lineNumber: 321,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-            lineNumber: 104,
+            lineNumber: 145,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/advisor/StyleAdvisor.tsx",
-        lineNumber: 103,
+        lineNumber: 144,
         columnNumber: 5
     }, this);
 }
-_s(StyleAdvisor, "DklczvNfnWGtQqxri9wMc1C2D00=", false, function() {
+_s(StyleAdvisor, "xvJa29HosyL01u/qhR3+haSZbro=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$configuratorStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConfiguratorStore"],
         __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$configuratorStore$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useConfiguratorStore"],
@@ -1397,6 +1477,16 @@ const useConfiguratorStore = (0, __TURBOPACK__imported__module__$5b$project$5d2f
             }),
         setKeycapSet: (keycapSet)=>set({
                 keycapSet
+            }),
+        reset: ()=>set({
+                layout: "60",
+                caseColor: "charcoal",
+                switchType: "linear",
+                keycapSet: "standard",
+                addOns: [],
+                personalizationText: "",
+                cart: [],
+                isAdvisorOpen: false
             }),
         toggleAddOn: (addonId)=>set((state)=>({
                     addOns: state.addOns.includes(addonId) ? state.addOns.filter((id)=>id !== addonId) : [
