@@ -2,7 +2,7 @@
 
 StudioPick is an AI-assisted mechanical keyboard configurator. Users choose a keyboard build, track the live price with Zustand, and ask an AI Style Advisor for a budget-aware recommendation that can be applied to the configurator in one click.
 
-[![Live on Vercel](https://vercel.com/button)](https://studiopick.vercel.app)
+[![Live on Vercel](https://studiopick-app.vercel.app)](https://studiopick-app.vercel.app)
 
 ![Next.js](https://img.shields.io/badge/Next.js-App%20Router-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue?logo=typescript)
